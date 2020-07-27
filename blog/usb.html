@@ -1,0 +1,228 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="../img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Archcraft - Create A Bootable USB For Archcraft</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="../css/linearicons.css">
+			<link rel="stylesheet" href="../css/font-awesome.min.css">
+			<link rel="stylesheet" href="../css/bootstrap.css">
+			<link rel="stylesheet" href="../css/magnific-popup.css">
+			<link rel="stylesheet" href="../css/nice-select.css">					
+			<link rel="stylesheet" href="../css/animate.min.css">
+			<link rel="stylesheet" href="../css/owl.carousel.css">
+			<link rel="stylesheet" href="../css/main.css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="../index.html"><img src="../img/logo.png" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="../index.html">Home</a></li>
+				          <li><a href="../features.html">Features</a></li>
+				          <li><a href="../install.html">Installation</a></li>
+				          <li><a href="../gallery.html">Gallery</a></li>
+				          <li><a href="../blog.html">Blog</a></li>
+				          <li><a class="ticker-btn" href="https://sourceforge.net/projects/archcraft/files/latest/download">Download</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-8">
+							<h1 class="text-white">
+								Create A Bootable USB For Archcraft
+							</h1>
+						</div>											
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start Generic Area -->
+			<section class="about-generic-area section-gap">
+				<div class="container border-top-generic">
+					<h2 class="about-title mb-30">dd (Linux)</h2>
+						<p>If you're already using a linux based OS, then you can create archcraft bootable usb with <code>dd</code>. dd creates both BIOS and UEFI bootable USB &amp; this method is recommended due to its simplicity and universal availability.
+						Follow the steps below to create the bootable usb with dd - </p>
+						<ul class="unordered-list">
+							<li>Open terminal and type <code>lsblk</code> to get the USB info. In my case, it's <b>/dev/sdb</b>.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>Run <code>sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync</code> &amp; enter your password.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>Make sure you replace "path/to/archcraft.iso" with archcraft iso path &amp; "sdX" with your disk name in above command.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>This will create both BIOS &amp; UEFI bootable USB for archcraft.</li>
+						</ul>
+						<br>
+						<p align="center">
+							<img src="img/usb_1.png" class="img-fluid" alt="Responsive image">
+						</p>
+
+					<br>
+					<h2 class="about-title mb-30">Etcher (Linux, Mac, Windows)</h2>
+						<p><a href="https://www.balena.io/etcher/">Etcher</a> is a OS image flasher built with node.js and Electron, capable of flashing an SDCard or USB drive. It protects you from accidentally writing to your hard-drives and ensures every byte of data was written correctly.
+						Follow the steps below to create the bootable usb with Etcher - </p>
+						<ul class="unordered-list">
+							<li>Launch Etcher. click on <kbd>Select Image</kbd> &amp; select the Archcraft ISO.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>Select your USB drive, Be careful.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>And then, click on <kbd>Flash!</kbd> &amp; wait.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>This will create both BIOS &amp; UEFI bootable USB for archcraft.</li>
+						</ul>
+						<br>
+						<p align="center">
+							<img src="img/usb_2.gif" class="img-fluid" alt="Responsive image">
+						</p>
+						
+					<br>
+					<h2 class="about-title mb-30">Other Options</h2>
+						<div class="typography">
+							<h4>Linux - CLI</h4>
+						</div>
+						<br>
+						<ul class="unordered-list">
+							<li>Using <b>cat</b> : Run <code>cat path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>Using <b>cp</b> : Run <code>cp path/to/archcraft.iso /dev/sdx</code> with root permissions.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>Using <b>tee</b> : Run <code>tee < path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
+						</ul>
+						
+						<br>
+						<div class="typography">
+							<h4>Windows - Rufus</h4>
+						</div>
+						<br>
+						<p><a href="https://rufus.akeo.ie/">Rufus</a> is a multi-purpose USB ISO writer. It provides a graphical user interface and does not care if the drive is properly formatted or not.
+						Simply select the Archcraft ISO, the USB drive you want to create the bootable Archcraft onto and click START.</p>
+						<blockquote class="generic-blockquote">
+							If the USB drive does not boot properly using the default ISO Image mode, DD Image mode should be used instead.<br>
+						</blockquote>
+						<ul class="unordered-list">
+							<li>For Rufus version ≥ 3.0 select GPT from the Partition scheme drop-down menu. After clicking START you will get the mode selection dialog, select DD Image mode.</li>
+						</ul>
+						<ul class="unordered-list">
+							<li>For Rufus version < 3.0 select DD Image mode from the drop-down menu on the bottom.</li>
+						</ul>
+				</div>
+			</section>
+			<!-- End Generic Start -->		
+
+			<!-- BMAC -->
+			<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="adi1090x" data-description="Support me on Buy me a coffee!" data-message="Wanna buy me a coffee?" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Like it?</h6>
+								<p><span class="fa fa-coffee"></span>&nbsp;&nbsp;<a href="https://www.buymeacoffee.com/adi1090x"><b>Buy me a coffee</b></a> <br />
+								<span class="fa fa-coffee"></span>&nbsp;&nbsp;<a href="https://ko-fi.com/adi1090x"><b>Support me on ko-fi</b></a> <br />
+								<span class="fa fa-gift"></span>&nbsp;&nbsp;<a href="https://www.patreon.com/adi1090x"><b>Support me on Patreon</b></a> <br />
+								<span class="fa fa-paypal"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.paypal.me/adi1090x"><b>Paypal maybe, IDK</b></a> <br />
+								<span class="fa fa-rupee"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../img/upi.jpeg"><b>adi1090x@upi</b></a></p>
+								<p class="footer-text">
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy; <script>document.write(new Date().getFullYear());</script> | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Project Status</h6>
+								<div class="" id="mc_embed_signup">
+										<p>Active development? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""> <br />
+										Maintained? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""> <br />
+										Alive? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Project Page</h6>
+								<div class="" id="mc_embed_signup">
+								<p><span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os"><b>Archcraft OS</b></a> <br />
+								<span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os/archcraft"><b>Source Code</b></a> <br />
+								<span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os/archcraft/issues/new"><b>Open Issue</b></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Get in touch</h6>
+								<p>A few places I exist</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://github.com/adi1090x"><i class="fa fa-github"></i></a>
+									<a href="https://www.reddit.com/user/adi1090x"><i class="fa fa-reddit"></i></a>
+									<a href="mailto:adi1090x@gmail.com?subject=Archcraft%20-%20Your_Stuff"><i class="fa fa-envelope"></i></a>
+									<a href="https://discord.gg/ZbcWcGF"><i class="fa fa-comments"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="../js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="../js/easing.min.js"></script>			
+			<script src="../js/hoverIntent.js"></script>
+			<script src="../js/superfish.min.js"></script>	
+			<script src="../js/jquery.ajaxchimp.min.js"></script>
+			<script src="../js/jquery.magnific-popup.min.js"></script>	
+			<script src="../js/owl.carousel.min.js"></script>			
+			<script src="../js/jquery.sticky.js"></script>
+			<script src="../js/jquery.nice-select.min.js"></script>			
+			<script src="../js/parallax.min.js"></script>		
+			<script src="../js/mail-script.js"></script>	
+			<script src="../js/main.js"></script>	
+		</body>
+	</html>
+
+
+

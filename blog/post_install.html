@@ -78,7 +78,7 @@
 						<br>
 						<pre><code data-language="shell">$ sudo pacman -Syy && sudo pacman -Syu</code></pre>
 						<ul class="unordered-list">
-							<li>Install new softwares - install your favorite programs with <code>pacman</code> or <code>yay</code> (AUR).</li>
+							<li>Install new software - install your favorite programs with <code>pacman</code> or <code>yay</code> (AUR).</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell">$ sudo pacman -S firefox gimp
@@ -87,14 +87,14 @@
 
 $ yay -S spotify		</code></pre>
 						<ul class="unordered-list">
-							<li>Fix Icons - Some icons not showing in the bar.</li>
+							<li>Fix icons - some icons not showing in the bar.</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell"># Run the following script to fix battery and network modules in polybar
 
 $ ~/.config/polybar/fix_modules.sh						</code></pre>
 						<ul class="unordered-list">
-							<li>Remove unnecessary modules form initrd - Let's say you've installed archcraft on a machine with Intel GPU. In this case you only need <code>i915</code>. Delete rest modules from the array and rebuild initrd.</li>
+							<li>Remove unnecessary modules form initrd - let's say you've installed Archcraft on a machine with Intel GPU. In this case you only need <code>i915</code>. Delete other modules from the array and rebuild initrd.</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell"># Edit mkinitcpio.conf file
@@ -108,8 +108,7 @@ MODULES=(i915)
 # Save file and rebuild initrd
 $ sudo mkinitcpio -p linux						</code></pre>
 						<ul class="unordered-list">
-							<li>If you've installed Archcraft without encryption, there are some settings that'll be useless for you in this case. 
-							So after normal installation, Do following - </li>
+							<li>If you've installed Archcraft without encryption, there are some settings that'll be useless for you. After normal installation, do the following:</li>
 						</ul>
 						<br>		
 						<pre><code data-language="shell"># Edit grub settings file
@@ -132,10 +131,10 @@ HOOKS=(base udev plymouth autodetect modconf block filesystems keyboard fsck)
 # Save file and rebuild initrd
 $ sudo mkinitcpio -p linux						</code></pre>
 						<ul class="unordered-list">
-							<li>By default, Touchpad is disabled. To enable it, Press <kbd>Window</kbd> or <kbd><kbd>Alt</kbd> + <kbd>F1</kbd></kbd> key to open launcher, Type <b>Mouse</b> & open <code>Mouse and Touchpad</code>. Then goto Touchpad &amp; check <code>Tap to click</code>.</li>
+							<li>By default, touchpad is disabled. To enable it, press <kbd>Window</kbd> or <kbd>Alt + F1</kbd> key to open launcher, type <b>Mouse</b> & open <code>Mouse and Touchpad</code>. Then go to Touchpad &amp; check <code>Tap to click</code>.</li>
 						</ul>
 						<br>
-						<p>Well, that's pretty much everything for now, go ahead and try out archcraft.</p>
+						<p>Well, that's pretty much everything for now, go ahead and try out Archcraft.</p>
 				</div>
 			</section>
 			<!-- End Generic Start -->		

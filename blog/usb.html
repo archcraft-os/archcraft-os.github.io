@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Archcraft - Create A Bootable USB For Archcraft</title>
+		<title>Archcraft - Create A Bootable USB With Archcraft</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -59,7 +59,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Create A Bootable USB For Archcraft
+								Create A Bootable USB With Archcraft
 							</h1>
 						</div>											
 					</div>
@@ -71,8 +71,7 @@
 			<section class="about-generic-area section-gap">
 				<div class="container border-top-generic">
 					<h2 class="about-title mb-30">dd (Linux)</h2>
-						<p>If you're already using a linux based OS, then you can create archcraft bootable usb with <code>dd</code>. dd creates both BIOS and UEFI bootable USB &amp; this method is recommended due to its simplicity and universal availability.
-						Follow the steps below to create the bootable usb with dd - </p>
+						<p>If you're already using a Linux based OS, you can create an Archcraft bootable USB with <code>dd</code>. dd creates both BIOS and UEFI bootable USB &amp; this method is recommended due to its simplicity and universal availability. Follow the steps below to create a bootable USB with dd:</p>
 						<ul class="unordered-list">
 							<li>Open terminal and type <code>lsblk</code> to get the USB info. In my case, it's <b>/dev/sdb</b>.</li>
 						</ul>
@@ -80,10 +79,10 @@
 							<li>Run <code>sudo dd bs=4M if=path/to/archcraft.iso of=/dev/sdX status=progress oflag=sync</code> &amp; enter your password.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>Make sure you replace "path/to/archcraft.iso" with archcraft iso path &amp; "sdX" with your disk name in above command.</li>
+							<li>Make sure you replace "path/to/archcraft.iso" with the Archcraft ISO path &amp; "sdX" with your disk name from the above command.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>This will create both BIOS &amp; UEFI bootable USB for archcraft.</li>
+							<li>This will create both BIOS &amp; UEFI bootable USB for Archcraft.</li>
 						</ul>
 						<br>
 						<p align="center">
@@ -92,19 +91,18 @@
 
 					<br>
 					<h2 class="about-title mb-30">Etcher (Linux, Mac, Windows)</h2>
-						<p><a href="https://www.balena.io/etcher/">Etcher</a> is a OS image flasher built with node.js and Electron, capable of flashing an SDCard or USB drive. It protects you from accidentally writing to your hard-drives and ensures every byte of data was written correctly.
-						Follow the steps below to create the bootable usb with Etcher - </p>
+						<p><a href="https://www.balena.io/etcher/">Etcher</a> is an OS image flasher built with Node.js and Electron, capable of flashing an SDCard or USB drive. It protects you from accidentally writing to your hard-drives and ensures every byte of data was written correctly. Follow the steps below to create a bootable USB with Etcher:</p>
 						<ul class="unordered-list">
-							<li>Launch Etcher. click on <kbd>Select Image</kbd> &amp; select the Archcraft ISO.</li>
+							<li>Launch Etcher. Click on <kbd>Select Image</kbd> &amp; select the Archcraft ISO.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>Select your USB drive, Be careful.</li>
+							<li>Select your USB drive, be careful to select the right one.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>And then, click on <kbd>Flash!</kbd> &amp; wait.</li>
+							<li>Click on <kbd>Flash!</kbd> &amp; wait.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>This will create both BIOS &amp; UEFI bootable USB for archcraft.</li>
+							<li>This will create both BIOS &amp; UEFI bootable USB for Archcraft.</li>
 						</ul>
 						<br>
 						<p align="center">
@@ -118,13 +116,13 @@
 						</div>
 						<br>
 						<ul class="unordered-list">
-							<li>Using <b>cat</b> : Run <code>cat path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
+							<li>Using <b>cat</b>: Run <code>cat path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>Using <b>cp</b> : Run <code>cp path/to/archcraft.iso /dev/sdx</code> with root permissions.</li>
+							<li>Using <b>cp</b>: Run <code>cp path/to/archcraft.iso /dev/sdx</code> with root permissions.</li>
 						</ul>
 						<ul class="unordered-list">
-							<li>Using <b>tee</b> : Run <code>tee < path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
+							<li>Using <b>tee</b>: Run <code>tee < path/to/archcraft.iso > /dev/sdx</code> with root permissions.</li>
 						</ul>
 						
 						<br>
@@ -132,8 +130,7 @@
 							<h4>Windows - Rufus</h4>
 						</div>
 						<br>
-						<p><a href="https://rufus.akeo.ie/">Rufus</a> is a multi-purpose USB ISO writer. It provides a graphical user interface and does not care if the drive is properly formatted or not.
-						Simply select the Archcraft ISO, the USB drive you want to create the bootable Archcraft onto and click START.</p>
+						<p><a href="https://rufus.akeo.ie/">Rufus</a> is a multi-purpose USB ISO writer. It provides a graphical user interface and does not care if the drive is properly formatted or not. Simply select the Archcraft ISO, the USB drive you want to create the bootable Archcraft onto and click START.</p>
 						<blockquote class="generic-blockquote">
 							If the USB drive does not boot properly using the default ISO Image mode, DD Image mode should be used instead.<br>
 						</blockquote>

@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Archcraft - Build Archcraft ISO With It's Source</title>
+		<title>Archcraft - Build Archcraft ISO With Its Source</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -60,7 +60,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Build Archcraft ISO With It's Source
+								Build Archcraft ISO With Its Source
 							</h1>
 						</div>											
 					</div>
@@ -71,8 +71,7 @@
 			<!-- Start Generic Area -->
 			<section class="about-generic-area section-gap">
 				<div class="container border-top-generic">
-						<p>If you are already using Archlinux, And you want to build the ISO yourself, maybe with your configs and additional programs.
-						Then, follow the steps below to successfully build the archcraft iso on arch linux.</p>
+						<p>If you are already using Arch Linux and want to build the ISO yourself, maybe with your configs and additional programs, follow the steps below to successfully build the Archcraft ISO on Arch Linux.</p>
 						<div class="typography">
 							<h4>Checklist</h4>
 						</div>
@@ -86,30 +85,30 @@
 						</ul>
 						<br>
 						<ul class="unordered-list">
-							<li>Open terminal and clone the archcraft repository.</li>
+							<li>Open terminal and clone the Archcraft repository.</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell">$ git clone --depth=1 https://github.com/archcraft-os/archcraft.git</code></pre>
 						<ul class="unordered-list">
-							<li>After cloning, change to <code>archcraft</code> directory &amp; run <kbd>setup.sh</kbd>. It'll install the dependencies, AUR packages, Fix Permissions, Etc. Be Patient!</li>
+							<li>After cloning, change to the <code>archcraft</code> directory &amp; run <kbd>setup.sh</kbd>. It'll install the dependencies &amp; AUR packages, fix permissions, etc. Be patient!</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell">$ cd archcraft
 $ chmod +x setup.sh
 $ ./setup.sh						</code></pre>
 						<ul class="unordered-list">
-							<li>Now, Change to <code>iso</code> directory & get <b>ROOT</b>. Then Run <kbd>build.sh</kbd></li>
+							<li>Change to the <code>iso</code> directory &amp; become the <b>ROOT</b>. Then run <kbd>build.sh</kbd></li>
 						</ul>
 						<br>
 						<pre><code data-language="">$ cd iso
 $ sudo su
 # ./build.sh -v						</code></pre>
 						<ul class="unordered-list">
-							<li>If everything goes well, you'll have the ISO in <code>iso/out</code> directory.</li>
+							<li>If everything goes well, you'll have the ISO in the <code>iso/out</code> directory.</li>
 						</ul>		
 						<br>				
 						<blockquote class="generic-blockquote">
-							If you want to Rebuild the ISO, Make sure you first remove <code>work</code> &amp; <code>out</code> dirs inside <code>iso</code> directory. Then run <kbd>./build.sh -v</kbd> as <b>root</b>. You don't need to run <kbd>setup.sh</kbd> again, it's a one time process only. 
+							If you want to rebuild the ISO, make sure to first remove the <code>work</code> &amp; <code>out</code> directories inside the <code>iso</code> directory. Then run <kbd>./build.sh -v</kbd> as <b>root</b>. You don't need to run <kbd>setup.sh</kbd> again, it's only a one-time process.
 						</blockquote>
 						<ul class="unordered-list">
 							<li>Here's a recording of the build process.</li>

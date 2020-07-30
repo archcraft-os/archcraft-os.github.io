@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Archcraft - Boot Archcraft ISO With Grub2 Bootloader</title>
+		<title>Archcraft - Boot Archcraft ISO With GRUB2 Bootloader</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -60,7 +60,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Boot Archcraft ISO With Grub2 Bootloader
+								Boot Archcraft ISO With GRUB2 Bootloader
 							</h1>
 						</div>											
 					</div>
@@ -71,15 +71,14 @@
 			<!-- Start Generic Area -->
 			<section class="about-generic-area section-gap">
 				<div class="container border-top-generic">
-						<p>If you already have Linux installed on your system and want to try Archcraft without making a bootable USB drive, you can do it with grub2 bootloader.
-						Follow the steps below to boot archcraft iso with grub2 - </p>
+						<p>If you already have Linux installed on your system and want to try Archcraft without making a bootable USB drive, you can do so with the GRUB2 bootloader. Follow the steps below to boot Archcraft ISO with GRUB2.</p>
 						<ul class="unordered-list">
 							<li>Open terminal and edit <code>/etc/grub.d/40_custom</code> with your favorite text editor.</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell">$ sudo vim /etc/grub.d/40_custom</code></pre>
 						<ul class="unordered-list">
-							<li>Add the following entry in that file, replace <code>(hd0,X)</code> with your root partition, EX - (hd0,2) &amp; "/path/to/archcraft.iso" with archcraft iso path.</li>
+							<li>Add the following entry in that file, replace <code>(hd0,X)</code> with your root partition, e.g. (hd0,2) &amp; "/path/to/archcraft.iso" with your Archcraft ISO path.</li>
 						</ul>
 						<br>
 						<pre><code data-language="shell">menuentry "Archcraft OS Amd_x86_x64" --class archcraft {
@@ -94,20 +93,20 @@
     initrd  (loop)/arch/boot/intel_ucode.img (loop)/arch/boot/x86_64/archiso.img
 }						</code></pre>
 						<ul class="unordered-list">
-							<li>Save the file and update <code>grub.cfg</code>, the grub configuration file.</li>
+							<li>Save the file and update <code>grub.cfg</code>, the GRUB configuration file.</li>
 						</ul>
 						<br>
-						<pre><code data-language="shell"># On Arch linux
+						<pre><code data-language="shell"># On Arch Linux
 $ sudo grub-mkconfig -o /boot/grub/grub.cfg
 						
-# On Ubuntu & it's derivatives
+# On Ubuntu & its derivatives
 $ sudo update-grub						</code></pre>
 						<ul class="unordered-list">
 							<li>After updating the config file, reboot the system and boot into Archcraft Live. Try it out, or maybe install it on a USB or SDcard.</li>
-						</ul>						
+						</ul>
 				</div>
 			</section>
-			<!-- End Generic Start -->		
+			<!-- End Generic Start -->
 
 			<!-- BMAC -->
 			<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="adi1090x" data-description="Support me on Buy me a coffee!" data-message="Wanna buy me a coffee?" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>

@@ -199,8 +199,10 @@ xorg-xkill
 xorg-xrandr
 xorg-xrdb
 
-## Intel GPU
+## GPU Drivers (Intel/AMD/Nvidia)
 xf86-video-intel
+xf86-video-amdgpu
+xf86-video-nouveau
 
 ## Networking
 networkmanager
@@ -235,7 +237,13 @@ ffmpeg
 ffmpegthumbnailer
 gcc
 geany
+geany-plugins
 gparted
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
 gtk-engine-murrine
 gvfs
 gvfs-mtp
@@ -253,7 +261,6 @@ mpd
 mplayer
 ncdu
 ncmpcpp
-neofetch
 nitrogen
 noto-fonts
 os-prober
@@ -265,6 +272,8 @@ plank
 polkit
 pulseaudio
 pulseaudio-alsa
+pulseaudio-equalizer-ladspa
+pavucontrol
 pv
 ranger
 scrot
@@ -299,13 +308,15 @@ linux-headers
 ## Archcraft Packages
 ac-about-dev
 ac-fonts
+ac-get-started
 ac-grid-icon-theme
-ac-grub2-theme-vimix
 ac-gtk-themepack
 ac-hybrid-icon-theme
 ac-lxdm-theme
 ac-pixmaps
 ac-wallpapers
+
+## AUR Packages
 betterlockscreen
 colorpicker
 compton-tryone-git
@@ -393,6 +404,11 @@ yay			</code></pre>
 									<div class="visit">Next Window (Current Desktop)</div>
 								</div>
 								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + Q/C</kbd></div>
+									<div class="visit">Close Windows</div>
+								</div>
+								<div class="table-row">
 									<div class="serial"><kbd>A</kbd></div>
 									<div class="country"><kbd>A + r/m</kbd></div>
 									<div class="visit">Toggle Resize/Move</div>
@@ -454,6 +470,11 @@ yay			</code></pre>
 								</div>
 								<div class="table-row">
 									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>Super</kbd></div>
+									<div class="visit">App Launcher</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
 									<div class="country"><kbd>W + Space</kbd></div>
 									<div class="visit">Openbox Menu</div>
 								</div>
@@ -464,8 +485,13 @@ yay			</code></pre>
 								</div>
 								<div class="table-row">
 									<div class="serial"><kbd>W</kbd></div>
-									<div class="country"><kbd>W + E/F/T/W</kbd></div>
-									<div class="visit">Text Editor/File Manager/Terminal/Web Browser</div>
+									<div class="country"><kbd>W + E/F/W</kbd></div>
+									<div class="visit">Text Editor/File Manager/Web Browser</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + Return/T</kbd></div>
+									<div class="visit">Terminal Emulator</div>
 								</div>
 								<div class="table-row">
 									<div class="serial"><kbd>W</kbd></div>
@@ -474,7 +500,7 @@ yay			</code></pre>
 								</div>
 								<div class="table-row">
 									<div class="serial"><kbd>W</kbd></div>
-									<div class="country"><kbd>W + C/V</kbd></div>
+									<div class="country"><kbd>W + P/V</kbd></div>
 									<div class="visit">Colorpicker/Sticky Notes</div>
 								</div>
 								<div class="table-row">
@@ -495,6 +521,11 @@ yay			</code></pre>
 									<div class="serial"><span class="fa fa-keyboard-o"></span></div>
 									<div class="country">Key</div>
 									<div class="visit">Action</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>Super</kbd></div>
+									<div class="visit">App Launcher</div>
 								</div>
 								<div class="table-row">
 									<div class="serial"><kbd>W</kbd></div>
@@ -617,8 +648,8 @@ yay			</code></pre>
 									<div class="visit">Move Floating Windows</div>
 								</div>
 								<div class="table-row">
-									<div class="serial"><kbd>A</kbd></div>
-									<div class="country"><kbd>A + F4</kbd></div>
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + C</kbd></div>
 									<div class="visit">Close Window</div>
 								</div>
 								<div class="table-row">

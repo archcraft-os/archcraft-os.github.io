@@ -1,0 +1,201 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="../img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Archcraft - Build Archcraft ISO With Its Source</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="../css/linearicons.css">
+			<link rel="stylesheet" href="../css/font-awesome.min.css">
+			<link rel="stylesheet" href="../css/bootstrap.css">
+			<link rel="stylesheet" href="../css/magnific-popup.css">
+			<link rel="stylesheet" href="../css/nice-select.css">					
+			<link rel="stylesheet" href="../css/animate.min.css">
+			<link rel="stylesheet" href="../css/owl.carousel.css">
+			<link rel="stylesheet" href="../css/main.css">
+			<link rel="stylesheet" href="../css/rainbow.css" type="text/css">
+		</head>
+		<body>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="../index.html"><img src="../img/logo.png" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="../index.html">Home</a></li>
+				          <li><a href="../features.html">Features</a></li>
+				          <li><a href="../install.html">Installation</a></li>
+				          <li><a href="../gallery.html">Gallery</a></li>
+				          <li><a href="../blog.html">Blog</a></li>
+				          <li><a class="ticker-btn" href="https://sourceforge.net/projects/archcraft/files/latest/download">Download</a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-8">
+							<h1 class="text-white">
+								Build Archcraft ISO With Its Source
+							</h1>
+						</div>											
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start Generic Area -->
+			<section class="about-generic-area section-gap">
+				<div class="container border-top-generic">
+						<p>If you are already using Arch Linux or Archcraft and want to build the ISO yourself, maybe with your configs and additional programs, follow the steps below to successfully build the Archcraft ISO on Arch Linux.</p>
+						<div class="typography">
+							<h4>Checklist</h4>
+						</div>
+						<br>
+						<ul class="unordered-list">
+							<li>archiso version : <b>47.1-1</b></li>
+							<li>At least 10GB of free space.</li>
+							<li>Arch Linux 64-bit only.</li>
+							<li>Clear pacman cache; <code>sudo pacman -Scc</code>.</li>
+							<li>Configure everything as <b>root</b>.</li>
+							<li>Disable auto updates.</li>
+						</ul>
+						<br>
+						<ul class="unordered-list">
+							<li>Open terminal and clone the Archcraft repository.</li>
+						</ul>
+						<br>
+						<pre><code data-language="shell">$ git clone --depth=1 https://github.com/archcraft-os/archcraft.git</code></pre>
+						<ul class="unordered-list">
+							<li>After cloning, change to the <code>archcraft</code> directory &amp; run <kbd>setup.sh</kbd></li>
+						</ul>
+						<br>
+						<pre><code data-language="shell">$ cd archcraft
+$ chmod +x setup.sh
+$ ./setup.sh						</code></pre>
+						<ul class="unordered-list">
+							<li>Change to the <code>iso</code> directory &amp; run <kbd>build.sh</kbd> as <b>root</b>.</li>
+						</ul>
+						<br>
+						<pre><code data-language="">$ cd iso
+$ sudo su
+# ./build.sh -v						</code></pre>
+						<ul class="unordered-list">
+							<li>If everything goes well, you'll have the ISO in the <code>iso/out</code> directory.</li>
+						</ul>		
+						<br>				
+						<blockquote class="generic-blockquote">
+							If you want to rebuild the ISO, make sure to first remove the <code>work</code> &amp; <code>out</code> directories inside the <code>iso</code> directory. Then run <kbd>./build.sh -v</kbd> as <b>root</b>. You don't need to run <kbd>setup.sh</kbd> again, it's only a one-time process.
+						</blockquote>
+						<ul class="unordered-list">
+							<li>Here's a recording of the build process (Update Needed).</li>
+						</ul>
+						<p align="center">		
+						<script src="https://asciinema.org/a/347929.js" id="asciicast-347929" async></script>
+						</p>
+				</div>
+			</section>
+			<!-- End Generic Start -->		
+
+			<!-- BMAC -->
+			<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="adi1090x" data-description="Support me on Buy me a coffee!" data-message="Wanna buy me a coffee?" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
+
+			<!-- start footer Area -->
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Like it?</h6>
+								<p><span class="fa fa-coffee"></span>&nbsp;&nbsp;<a href="https://www.buymeacoffee.com/adi1090x"><b>Buy me a coffee</b></a> <br />
+								<span class="fa fa-coffee"></span>&nbsp;&nbsp;<a href="https://ko-fi.com/adi1090x"><b>Support me on ko-fi</b></a> <br />
+								<span class="fa fa-gift"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.patreon.com/adi1090x"><b>Support me on Patreon</b></a> <br />
+								<span class="fa fa-paypal"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U3VK2SSVQWAPN"><b>Support me via paypal</b></a> <br />
+								<span class="fa fa-rupee"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../img/upi.jpeg" class="img-pop-up"><b>adi1090x@upi</b></a></p>
+								<p class="footer-text">
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+									Copyright &copy; <script>document.write(new Date().getFullYear());</script> | <a href="https://colorlib.com" target="_blank">Colorlib</a>
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Project Status</h6>
+								<div class="" id="mc_embed_signup">
+										<p>Active development? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""> <br />
+										Maintained? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""> <br />
+										Alive? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Project Page</h6>
+								<div class="" id="mc_embed_signup">
+								<p><span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os"><b>Archcraft OS</b></a> <br />
+								<span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os/archcraft"><b>Source Code</b></a> <br />
+								<span class="fa fa-github"></span>&nbsp;&nbsp; Github : <a href="https://github.com/archcraft-os/archcraft/issues/new"><b>Open Issue</b></a></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Get in touch</h6>
+								<p>A few places I exist</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="https://www.twitter.com/adi1090x"><i class="fa fa-twitter"></i></a>
+									<a href="https://github.com/adi1090x"><i class="fa fa-github"></i></a>
+									<a href="https://www.reddit.com/user/adi1090x"><i class="fa fa-reddit"></i></a>
+									<a href="mailto:adi1090x@gmail.com?subject=Archcraft%20-%20Your_Stuff"><i class="fa fa-envelope"></i></a>
+									<a href="https://discord.gg/ZbcWcGF"><i class="fa fa-comments"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+
+			<script src="../js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="../js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="../js/easing.min.js"></script>			
+			<script src="../js/hoverIntent.js"></script>
+			<script src="../js/superfish.min.js"></script>	
+			<script src="../js/jquery.ajaxchimp.min.js"></script>
+			<script src="../js/jquery.magnific-popup.min.js"></script>	
+			<script src="../js/owl.carousel.min.js"></script>			
+			<script src="../js/jquery.sticky.js"></script>
+			<script src="../js/jquery.nice-select.min.js"></script>			
+			<script src="../js/parallax.min.js"></script>		
+			<script src="../js/mail-script.js"></script>	
+			<script src="../js/main.js"></script>
+			<script src="../js/rainbow.js"></script>	
+		</body>
+	</html>

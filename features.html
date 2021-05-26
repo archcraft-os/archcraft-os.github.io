@@ -195,6 +195,25 @@
 			</div>
 			<!-- End Donation Model Area -->
 
+			<!-- Start Donation Model Area -->
+			<div class="modal fade" id="donate_upi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h4 class="modal-title">Donate</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					<img src="img/upi_qr.jpeg" class="img-fluid" alt="Responsive image"></img>
+				</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- End Donation Model Area -->
+
 			<!-- Start Table Area -->
 			<div class="whole-wrap">
 				<div class="container">
@@ -209,88 +228,88 @@
 								</div>
 								<div class="table-row">
 									<div class="serial">01</div>
-									<div class="country">ABIF</div>
-									<div class="visit">Arch Base Installation Framework - A Generic Offline Installer</div>
+									<div class="country">Calamares</div>
+									<div class="visit">Graphical Installer for easy system installation.</div>
 								</div>
 								<div class="table-row">
 									<div class="serial">02</div>
+									<div class="country">ABIF</div>
+									<div class="visit">Arch Base Installation Framework - For Expert Users</div>
+								</div>
+								<div class="table-row">
+									<div class="serial">03</div>
 									<div class="country">GRUB2</div>
 									<div class="visit">GRand Unified Bootloader - A multi-boot loader</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">03</div>
+									<div class="serial">04</div>
 									<div class="country">Plymouth</div>
 									<div class="visit">The flicker-free graphical boot screen</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">04</div>
+									<div class="serial">05</div>
 									<div class="country">Xorg</div>
 									<div class="visit">The most popular display server</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">05</div>
+									<div class="serial">06</div>
 									<div class="country">LXDM</div>
 									<div class="visit">A lightweight display manager (login screen)</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">06</div>
+									<div class="serial">07</div>
 									<div class="country">Openbox</div>
 									<div class="visit">A lightweight, powerful, and highly configurable stacking window manager</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">07</div>
+									<div class="serial">08</div>
 									<div class="country">Bspwm</div>
 									<div class="visit">A tiling window manager, supports multiple monitors</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">08</div>
+									<div class="serial">09</div>
 									<div class="country">Compton</div>
 									<div class="visit">A standalone compositor for Xorg, suitable for WMs</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">09</div>
+									<div class="serial">10</div>
 									<div class="country">Polybar</div>
 									<div class="visit">A fast and easy-to-use tool for creating status bars</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">10</div>
+									<div class="serial">11</div>
 									<div class="country">Rofi</div>
 									<div class="visit">Application launcher, menus &amp; applets</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">11</div>
+									<div class="serial">12</div>
 									<div class="country">Dunst</div>
 									<div class="visit">A lightweight notification daemon</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">12</div>
+									<div class="serial">13</div>
 									<div class="country">Network Manager</div>
 									<div class="visit">Manage network connection</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">13</div>
+									<div class="serial">14</div>
 									<div class="country">Thunar &amp; PCmanFM</div>
 									<div class="visit">File managers for each window manager</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">14</div>
+									<div class="serial">15</div>
 									<div class="country">Geany &amp; Leafpad</div>
 									<div class="visit">A lightweight IDE &amp; text editor</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">15</div>
+									<div class="serial">16</div>
 									<div class="country">Yay</div>
 									<div class="visit">AUR (Arch User Repository) helper</div>
 								</div>
 								<div class="table-row">
-									<div class="serial">16</div>
+									<div class="serial">17</div>
 									<div class="country">Styles scripts</div>
 									<div class="visit">Various scripts to change style for each WM</div>
-								</div>
-								<div class="table-row">
-									<div class="serial">17</div>
-									<div class="country">Font Changer</div>
-									<div class="visit">An individual &amp; a global font changer</div>
 								</div>
 								<div class="table-row">
 									<div class="serial">18</div>
@@ -327,129 +346,192 @@ xorg-xset
 xorg-xinput
 xf86-input-libinput
 
-## GPU Drivers (Intel/AMD/Nvidia)
+## GPU Drivers (Intel/AMD/VM)
 xf86-video-fbdev
 xf86-video-vesa
 xf86-video-intel
 xf86-video-amdgpu
 xf86-video-ati
+
+## GPU Drivers (Nvidia)
 xf86-video-nouveau
 nvidia
-
-## Networking
-networkmanager
-nm-connection-editor
-networkmanager-openvpn
+nvidia-utils
+nvidia-settings
 
 ## Openbox
 obconf
 openbox
-adapta-gtk-theme
 
 ## Bspwm
 bspwm
 sxhkd
-arc-gtk-theme
-arc-icon-theme
 
-## Programs
+## Programs ------------
+
+## Networking / Internet
+bmon
+inetutils
+midori
+networkmanager
+networkmanager-openvpn
+bluez
+bluez-utils
+nethogs
+nm-connection-editor
+wget
+
+## Printers
+cups
+gutenprint
+
+## Sound
 alsa-plugins
 alsa-tools
 alsa-utils
-atril
-autoconf
-automake
-binutils
-bison
-bmon
-calc
-dunst
-fakeroot
+pavucontrol
+pulseaudio
+pulseaudio-alsa
+pulseaudio-equalizer-ladspa
+
+## Files
+ranger
+pcmanfm
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+zip
+p7zip
+unzip
+unrar
+xarchiver
+xdg-user-dirs
+
+## Images
 feh
+imagemagick
+viewnior
+
+## Multimedia
 ffmpeg
 ffmpegthumbnailer
-gcc
-geany
-geany-plugins
-gparted
 gst-libav
 gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
-gtk-engine-murrine
-gvfs
-gvfs-mtp
-htop
-imagemagick
-inetutils
-jq
-leafpad
-lxappearance
-lxdm-gtk3
-make
-midori
 mpc
 mpd
 mplayer
-ncdu
 ncmpcpp
-nitrogen
+tumbler
+
+## Terminals
+alacritty
+
+## Docs / Editors
+atril
+geany
+geany-plugins
+leafpad
+vim
+
+## Fonts
 noto-fonts
-os-prober
-p7zip
-patch
-pcmanfm
-pkg-config
-plank
+terminus-font
+ttf-dejavu
+
+## System
+dunst
+lxdm-gtk3
 polkit
 powertop
-pulseaudio
-pulseaudio-alsa
-pulseaudio-equalizer-ladspa
-pavucontrol
+htop
+ncdu
+autoconf
+automake
+binutils
+bison
+fakeroot
+patch
+pkg-config
+make
+calc
+gcc
+jq
+gparted
+gvfs
+gvfs-mtp
+gvfs-afc
+gvfs-gphoto2
+gvfs-smb
+gvfs-google
+sshfs
+udisks2
+gtk-engine-murrine
 pv
-ranger
+xmlstarlet
+xsettingsd
+yad
+xclip
+
+## Utilities
+fortune-mod
+meld
+lxappearance
+nitrogen
+plank
 rofi
 scrot
-termite
-terminus-font
-thunar
-thunar-archive-plugin
-thunar-media-tags-plugin
-thunar-volman
-ttf-dejavu
-tumbler
-udisks2
-unrar
-unzip
-viewnior
-vim
-wget
-xarchiver
-xclip
-xdg-user-dirs
 xfce4-power-manager
 xfce4-settings
-xmlstarlet
-yad
-zip
+
+## QT Style
+kvantum-qt5
+kvantum-theme-adapta
+qt5ct
+
+## Calamares
+boost
+ckbcomp
+calamares
+calamares-config
+mkinitcpio-openswap
 
 ## Virtual Box
-virtualbox-guest-dkms
 virtualbox-guest-utils
 linux-headers
 
+## VM Ware
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware
+
+## grub
+os-prober
+lsb-release
+archcraft-grub
+
 ## Archcraft Packages
-ac-about-dev
-ac-fonts
-ac-get-started
-ac-grid-icon-theme
-ac-gtk-themepack
-ac-hybrid-icon-theme
-ac-lxdm-theme
-ac-pixmaps
-ac-wallpapers
+archcraft-skeleton
+archcraft-style-bspwm
+archcraft-style-openbox
+archcraft-scripts
+archcraft-gtk-themes
+archcraft-icon-packs
+archcraft-wallpapers
+archcraft-installer
+archcraft-install-scripts
+archcraft-hooks
+archcraft-fonts
+archcraft-cursors
+archcraft-pixmaps
+archcraft-startapp
+archcraft-about
+
+lxdm-theme-archcraft
+grub2-theme-default
 
 ## AUR Packages
 betterlockscreen
@@ -458,7 +540,6 @@ cava
 colorpicker
 compton-tryone-git
 downgrade
-grub-silent
 i3lock-color
 ksuperkey
 networkmanager-dmenu-git
@@ -466,6 +547,8 @@ obmenu-generator
 perl-linux-desktopfiles
 plymouth
 polybar
+pyroom
+timeshift
 toilet
 tty-clock
 unimatrix-git
@@ -831,7 +914,7 @@ yay			</code></pre>
 								<span class="fa fa-coffee"></span>&nbsp;&nbsp;<a href="https://ko-fi.com/adi1090x"><b>Support me on ko-fi</b></a> <br />
 								<span class="fa fa-gift"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.patreon.com/adi1090x"><b>Support me on Patreon</b></a> <br />
 								<span class="fa fa-paypal"></span>&nbsp;&nbsp;&nbsp;<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=U3VK2SSVQWAPN"><b>Support me via paypal</b></a> <br />
-								<span class="fa fa-rupee"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="img/upi.jpeg" class="img-pop-up"><b>adi1090x@upi</b></a></p>
+								<span class="fa fa-rupee"></span>&nbsp;&nbsp;&nbsp;&nbsp;<a data-toggle="modal" data-target="#donate_upi" href=""><b>adi1090x@upi</b></a></p>
 								<p class="footer-text">
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 									Copyright &copy; <script>document.write(new Date().getFullYear());</script> | <a href="https://colorlib.com" target="_blank">Colorlib</a>

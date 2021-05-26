@@ -14,7 +14,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Archcraft - Things To Do After Installing Archcraft OS</title>
+		<title>Archcraft - Install Archcraft With Calamares Installer</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -28,7 +28,6 @@
 			<link rel="stylesheet" href="../css/animate.min.css">
 			<link rel="stylesheet" href="../css/owl.carousel.css">
 			<link rel="stylesheet" href="../css/main.css">
-			<link rel="stylesheet" href="../css/rainbow.css" type="text/css">
 		</head>
 		<body>
 
@@ -59,7 +58,7 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								Things To Do After Installing Archcraft OS
+								Install Archcraft With Calamares Installer on UEFI/BIOS (With Encryption)
 							</h1>
 						</div>											
 					</div>
@@ -214,94 +213,115 @@
 			<!-- Start Generic Area -->
 			<section class="about-generic-area section-gap">
 				<div class="container border-top-generic">
-						<p>After installing Archcraft OS, there are few things you should do.</p>
-						<ul class="unordered-list">
-							<li>Update your installation.</li>
-						</ul>
+						<p>This is a simple guide for beginners and linux newbies to install Archcraft on their system, without messing it up. Follow the steps below to install Archcraft with Calamares Installer on UEFI or BIOS system (with optional encryption).</p>
+						<p>I'm assuming that you have already created a <a href="usb.html">bootable USB</a> with Archcraft ISO, boot system with it &amp; select <code>"Boot Archcraft"</code>. On the login screen, enter <code>"liveuser"</code> as the password &amp; login to openbox desktop. Press <kbd>Window</kbd> or <kbd><kbd>Alt</kbd> + <kbd>F1</kbd></kbd> key to open launcher, select <code>"Install Archcraft"</code> &amp; launch installer.</p>
+						<ol class="ordered-list">
+							<li><span>You must be on the welcome screen of Archcraft installer now, Select the Installer language &amp; click on <kbd>Next</kbd></span></li>
 						<br>
-						<pre><code data-language="shell">$ sudo pacman -Syy && sudo pacman -Syu</code></pre>
-						<p>If you see <i>“invalid or corrupted package (PGP signature)”</i>, do... </p>
-						<pre><code data-language="shell">$ sudo pacman -S archlinux-keyring
-
-# or...
-
-$ sudo pacman-key --populate</code></pre>
-						<ul class="unordered-list">
-							<li>Install new software - install your favorite programs with <code>pacman</code> or <code>yay</code> (AUR).</li>
-						</ul>
+						<p align="center">
+							<img src="img/calamares/1.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>On the next screen, select your <code>Region</code> and <code>Time Zone</code>. Installer will do that automatically if you are connected to the internet.</span></li>
 						<br>
-						<pre><code data-language="shell">$ sudo pacman -S firefox gimp
-
-# Or from AUR
-
-$ yay -S spotify		</code></pre>
-						<ul class="unordered-list">
-							<li>Fix icons - if some icons are not showing in the bar.</li>
-						</ul>
+						<p align="center">
+							<img src="img/calamares/2.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Here's an important thing to be mentioned, make sure you use an <code>UTF-8 System Language</code> or you'll face issues with some programs like (compton, plank, etc). Some programs are not able to detect the windows class and instances with Non UTF-8 system languages.</p>
+						<p>To check if your selected language is in UTF-8 or not, click on the <kbd>Change...</kbd> button at bottom right corner.</p>
+						<p align="center">
+							<img src="img/calamares/2a.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>As you can see, The Indian English, <code>en_IN</code> is not in UTF-8 format. So I'm going to use <code>en_US.UTF-8</code> as the System language.</p>
+						<p align="center">
+							<img src="img/calamares/3.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Now my system language is set to American English, which is in UTF-8 format. Choose accordingly and click on <kbd>Next</kbd> to continue.</p>
+						<p align="center">
+							<img src="img/calamares/4.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>On the next screen, select your <code>Keyboard Layout</code> and click on <kbd>Next</kbd>. By default it is automatically set as your system language.</span></li>
 						<br>
-						<pre><code data-language="shell"># Run the following script to fix battery and network modules in polybar
-
-$ ~/.config/polybar/fix_modules.sh						</code></pre>
-						<ul class="unordered-list">
-							<li>Fix lockscreen layout on hidpi or low resolution displays.</li>
-						</ul>
+						<p align="center">
+							<img src="img/calamares/5.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>Now, It's time to <code>Partition the disk</code>. This is where almost every Linux newbie messes things up. <i>Be careful what you do here</i>.</span></li>
 						<br>
-						<pre><code data-language="shell"># Update the lockscreen
-
-$ betterlockscreen -u /usr/share/backgrounds/wal_10.jpg						</code></pre>
-						<ul class="unordered-list">
-							<li>Enable betterlockscreen's suspend service for your user account.</li>
-						</ul>
+						<p>If you're installing on Virtualbox or any other virtual machine, you can simply choose <code>Erase disk</code>. Or If you're trying to dual boot Archcraft with Windows, You can choose <code>Alongside Windows</code>. It's up to you, how you manage partitioning for your installation.
 						<br>
-						<pre><code data-language="shell"># Enable betterlockscreen suspend service
-
-$ sudo systemctl enable betterlockscreen@$USER.service						</code></pre>
-						<ul class="unordered-list">
-							<li>If grub failed to detect other installed Operating systems, edit the config file and regenerate grub.cfg file.</li>
-						</ul>
+						In this guide, I'm going to install Archcraft on UEFI with Encrypted root partition. I prefer to partition manually, So i'm selecting <code>Manual Partitioning</code> and moving forward.
+						</p>
+						<p align="center">
+							<img src="img/calamares/6.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>On the next screen, Click on <kbd>New Partition Table</kbd>. This is an empty disk as I'm installing Archcraft on Virtualbox.</p>
+						<p align="center">
+							<img src="img/calamares/7.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Select <code>GUID Partition Table (GPT)</code> If you're booted in UEFI mode. For BIOS, choose <code>Master Boot Record (MBR)</code>. You can use GPT for BIOS too, But in that case you have to set up a separate <code>BIOS Boot Partition</code>, Or grub will be fail to install.</p>
+						<p align="center">
+							<img src="img/calamares/8.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Partition table is created, Now click on <kbd>Create</kbd> to create partitions...</p>
+						<p align="center">
+							<img src="img/calamares/9.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Let's make an <code>EFI boot partition</code>. If you are dual booting Archcraft with Windows or Linux, There should already be an EFI boot partition on your disk. In that case, you don't need to create a new one. Just mount the existing EFI partition at <code>/boot</code>. Do not format it, otherwise, you won't be able to boot into Windows.
+						<br>If you are installing Archcraft with encryption on BIOS, you need to create a separate boot partition as well.
+						</p>
+						<p>Here, I've created a 300MB partition for EFI (and for encryption also) and mounted it at <code>/boot/efi</code> with a <i>boot</i> flag.</p>
+						<p align="center">
+							<img src="img/calamares/10.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Next, I've created a 13GB encrypted btrfs root partition, mounted it at <code>/</code> with <i>root</i> flag.</p>
+						<p align="center">
+							<img src="img/calamares/11.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>And... a swap partition of 2GB, Make sure you make a swap partition or file equal to or bigger than your main memory.</p>
+						<p align="center">
+							<img src="img/calamares/12.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>Here's the partitioning for this installation. You can also create an additional <i>/home</i> partition and mount it at <code>/home</code>
+						<br>Click on <kbd>Next</kbd> to continue the installation.
+						</p>
+						<p align="center">
+							<img src="img/calamares/13.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>You may get this message if you choose MBR partition Table on BIOS; Basically the installer wants you to use GPT on BIOS. Just ignore it and click on <kbd>OK</kbd></span></li>
 						<br>
-						<pre><code data-language="shell"># Edit /etc/default/grub and uncomment this line
-#GRUB_DISABLE_OS_PROBER=false
-
-# Regenerate grub config file
-$ sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-# Or... just run
-$ sudo update-grub						</code></pre>
-						<ul class="unordered-list">
-							<li>If you're using an AMD based system and facing screen tearing issue, create a xorg.conf file like this - </li>
-						</ul>
+						<p align="center">
+							<img src="img/calamares/14.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>You also may get this warning, if you use encryption and do not encrypt <code>/boot</code> partition. You can also ignore that or you can go back and encrypt your boot partition as well.</p>
+						<p align="center">
+							<img src="img/calamares/15.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>Now, Enter your <i>Name</i>, <i>username</i>, <i>hostname</i> and <i>password</i> and click on <kbd>Next</kbd></span></li>
 						<br>
-						<pre><code data-language="shell"># Change to xorg.conf.d dir
-$ cd /etc/X11/xorg.conf.d
-
-# Create a conf file
-$ sudo touch 20-amdgpu.conf
-
-# Edit the file
-$ sudo vim 20-amdgpu.conf
-
-# Paste this in the editor
-Section "Device"
-     Identifier "AMD"
-     Driver "amdgpu"
-     Option "TearFree" "true"
-EndSection						</code></pre>
-						<ul class="unordered-list">
-							<li>Remove unnecessary modules form initrd - let's say you've installed Archcraft on a machine with Intel GPU. In this case you only need <code>i915</code>. Delete other modules from the array and rebuild initrd.</li>
-						</ul>
+						<p align="center">
+							<img src="img/calamares/16.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>That's the summary of this installation, Basically everything you did in the installer, Have a good look and then click on <kbd>Install</kbd></span></li>
 						<br>
-						<pre><code data-language="shell"># Edit mkinitcpio.conf file
-$ sudo vim /etc/mkinitcpio.conf
-
-# Change line 7 from
-MODULES=(i915? amdgpu? radeon? nouveau? vboxvideo? vmwgfx?)
-# To
-MODULES=(i915)
-
-# Save file and rebuild initrd
-$ sudo mkinitcpio -p linux						</code></pre>
-						<p>Well, that's pretty much everything for now, go ahead and try out Archcraft.</p>
+						<p align="center">
+							<img src="img/calamares/17.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>Now, The actual installation begins. The installer will create partitions, mount them, unpack rootfs, configure locale, generate initrd etc.</span></li>
+						<br>
+						<p align="center">
+							<img src="img/calamares/18.png" class="img-fluid" alt="Responsive image">
+						</p>
+						<p>And if connected to the internet, it'll download the package databases then configure the installed system and perform clean up.</p>
+						<p align="center">
+							<img src="img/calamares/19.png" class="img-fluid" alt="Responsive image">
+						</p>
+							<li><span>After successful installation, You can check <code>Restart now</code> and click on <kbd>Done</kbd> to reboot your system.</span></li>
+						<br>
+						<p align="center">
+							<img src="img/calamares/20.png" class="img-fluid" alt="Responsive image">
+						</p>
+						</ol>
+						<br>
+						<p>That's it! Archcraft is installed on your system. Reboot the machine &amp; enjoy your new OS.</p>
 				</div>
 			</section>
 			<!-- End Generic Start -->		
@@ -380,7 +400,6 @@ $ sudo mkinitcpio -p linux						</code></pre>
 			<script src="../js/jquery.nice-select.min.js"></script>			
 			<script src="../js/parallax.min.js"></script>		
 			<script src="../js/mail-script.js"></script>	
-			<script src="../js/main.js"></script>
-			<script src="../js/rainbow.js"></script>	
+			<script src="../js/main.js"></script>	
 		</body>
 	</html>

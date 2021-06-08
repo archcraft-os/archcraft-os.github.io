@@ -28,6 +28,7 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/rainbow.css" type="text/css">
 		</head>
 		<body>
 
@@ -70,6 +71,56 @@
 			</section>
 			<!-- End banner Area -->	
 			
+			<!-- Start Download Modal -->
+			<div class="modal fade bd-example-modal-lg" id="downloads" tabindex="-1" aria-labelledby="downloadmodal" aria-hidden="true">
+			  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<img src="img/fav.png">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+						<div class="title text-center">
+							<h1 class="mb-10">Available Options</h1>
+							<p>You can download Archcraft from either github releases, sourceforge or by torrent.</p>
+						</div>
+						<p align="center">
+							<a href="https://github.com/archcraft-os/releases/releases/download/v21.06/archcraft-2021.06.06-x86_64.iso"><img style="margin: 10px 0px 10px 0px;" class="img-fluid" src="img/d1.png" width="128" height="128"></a>
+							<a href="https://sourceforge.net/projects/archcraft/files/latest/download"><img style="margin: 10px 80px 10px 80px;" class="img-fluid" src="img/d2.png" width="128" height="128"></a>
+							<a href="https://github.com/archcraft-os/releases/releases/download/v21.06/archcraft-2021.06.06-x86_64.iso.torrent"><img style="margin: 10px 0px 10px 0px;" class="img-fluid" src="img/d3.png" width="128" height="128"></a>
+						</p>
+						<h3 align="center">Verify the ISO</h3>
+						<br>
+						<div class="container border-top-generic">
+								<p>After downloading the ISO, you should verify it's authenticity.</p>
+								<ul class="unordered-list">
+									<li>Download <a href="https://github.com/archcraft-os/releases/releases/download/v21.06/archcraft-2021.06.06-x86_64.iso.sig">GPG singnature</a> and <a href="https://github.com/archcraft-os/releases/releases/download/v21.06/archcraft-2021.06.06-x86_64.iso.sha256sum">Sha256sum</a> files. Save them in the same directory as ISO.</li>
+								</ul>
+								<br>
+								<ul class="unordered-list">
+									<li>Open the terminal and Verify the details of the key on keyserver</li>
+								</ul>
+								<br>
+								<pre><code data-language="shell">$ gpg --recv-keys 7DC81F73</code></pre>
+								<ul class="unordered-list">
+									<li>Verify the gpg signature by running...</li>
+								</ul>
+								<br>
+								<pre><code data-language="shell">$ gpg --verify archcraft-2021.06.06-x86_64.iso.sig</code></pre>
+								<ul class="unordered-list">
+									<li>Finally, Verify the sha256sum checksum by running...</li>
+								</ul>
+								<br>
+								<pre><code data-language="shell">$ sha256sum -c archcraft-2021.06.06-x86_64.iso.sha256sum</code></pre>
+						</div>						
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- End Download Modal -->
+
 			<!-- Start Download Area -->
 			<section class="about-area section-gap">
 				<div class="container">
@@ -79,11 +130,11 @@
 							<h1>Download Archcraft</h1>
 							<p>
 								<span>
-									Latest Release: Archcraft OS 26.05.2021 | 1.7 GB
+									Latest Release: Archcraft OS 06.06.2021 | 1.7 GB
 								</span>
 							</p>
 							<p>Archcraft is only available for 64-bit architectures. There are no 32-bit or ARM editions &amp; perhaps, never going to be.</p>
-							<a class="primary-btn" href="https://sourceforge.net/projects/archcraft/files/latest/download">Download</a>
+							<a class="primary-btn" data-toggle="modal" data-target="#downloads" href="">Download</a>
 							&nbsp;&nbsp;&nbsp;
 							<a type="button" class="primary-btn" data-toggle="modal" data-target="#changelog" href="">Changelog</a>
 						</div>
@@ -119,6 +170,22 @@
 					</button>
 				  </div>
 				  <div class="modal-body">
+					<h6>June 2021</h6>
+						<details>
+						<summary>Click to expand</summary>
+						<ul class="unordered-list">
+							<li>Enabled auto login for live session/user</li>
+							<li>Enabled password free sudo permissions in live session</li> 
+							<li>Added an extra (xfce) terminal, in case alacritty doesn't work for you</li>
+							<li>Updated Installers to work in new `Copy to RAM` boot mode</li>
+							<li>Updated pacman configuration and fixed pacman related issues</li>
+							<li>Added a polkit agent (fix timeshift, snap pkgs related issues)</li>
+							<li>Added extra functionalities in thunar (set wallpaper, lockscreen, etc)</li>
+							<li>Fixed few bugs and typos</li>
+							<li>Updated New Archcraft links</li>
+						</ul>
+						</details>
+						<br />
 					<h6>May 2021</h6>
 						<details>
 						<summary>Click to expand</summary>

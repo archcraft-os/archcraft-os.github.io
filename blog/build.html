@@ -220,7 +220,7 @@
 						</div>
 						<br>
 						<ul class="unordered-list">
-							<li>archiso version : <b>54-1</b></li>
+							<li>archiso version : <b>55-1</b></li>
 							<li>At least 10GB of free space.</li>
 							<li>Arch Linux 64-bit only.</li>
 							<li>Clear pacman cache; <code>sudo pacman -Scc</code>.</li>
@@ -239,18 +239,18 @@
 $ chmod +x setup.sh
 $ ./setup.sh						</code></pre>
 						<ul class="unordered-list">
-							<li>Change to the <code>iso</code> directory &amp; run <kbd>build.sh</kbd> as <b>root</b>.</li>
+							<li>Change to the <code>iso</code> directory &amp; run <kbd>mkarchcraftiso</kbd> as <b>root</b>.</li>
 						</ul>
 						<br>
 						<pre><code data-language="">$ cd iso
 $ sudo su
-# ./build.sh -v						</code></pre>
+# ./mkarchcraftiso -v .						</code></pre>
 						<ul class="unordered-list">
 							<li>If everything goes well, you'll have the ISO in the <code>iso/out</code> directory.</li>
 						</ul>		
 						<br>				
 						<blockquote class="generic-blockquote">
-							If you want to rebuild the ISO, make sure to first remove the <code>work</code> &amp; <code>out</code> directories inside the <code>iso</code> directory. Then run <kbd>./build.sh -v</kbd> as <b>root</b>. You don't need to run <kbd>setup.sh</kbd> again, it's only a one-time process.
+							If you want to rebuild the ISO, make sure to first remove the <code>work</code> &amp; <code>out</code> directories inside the <code>iso</code> directory. Then run <kbd>./mkarchcraftiso -v .</kbd> as <b>root</b>. You don't need to run <kbd>setup.sh</kbd> again, it's only a one-time process.
 						</blockquote>
 						<ul class="unordered-list">
 							<li>Here's a recording of the build process (Update Needed).</li>

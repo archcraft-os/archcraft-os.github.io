@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
+		<link rel="shortcut icon" href="../img/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="codepixer">
 		<!-- Meta Description -->
@@ -14,20 +14,21 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Archcraft - Blog</title>
+		<title>Archcraft - Install DWM on Archcraft</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
 			CSS
 			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">
-			<link rel="stylesheet" href="css/nice-select.css">					
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">
-			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="../css/linearicons.css">
+			<link rel="stylesheet" href="../css/font-awesome.min.css">
+			<link rel="stylesheet" href="../css/bootstrap.css">
+			<link rel="stylesheet" href="../css/magnific-popup.css">
+			<link rel="stylesheet" href="../css/nice-select.css">					
+			<link rel="stylesheet" href="../css/animate.min.css">
+			<link rel="stylesheet" href="../css/owl.carousel.css">
+			<link rel="stylesheet" href="../css/main.css">
+			<link rel="stylesheet" href="../css/rainbow.css" type="text/css">
 		</head>
 		<body>
 
@@ -35,15 +36,15 @@
 			    <div class="container">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="../index.html"><img src="../img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li><a href="index.html">Home</a></li>
-				          <li><a href="features.html">Features</a></li>
-				          <li><a href="install.html">Installation</a></li>
-				          <li><a href="gallery.html">Gallery</a></li>
-				          <li><a href="blog.html">Blog</a></li>
+				          <li><a href="../index.html">Home</a></li>
+				          <li><a href="../features.html">Features</a></li>
+				          <li><a href="../install.html">Installation</a></li>
+				          <li><a href="../gallery.html">Gallery</a></li>
+				          <li><a href="../blog.html">Blog</a></li>
 				          <li><a type="button" class="ticker-btn" data-toggle="modal" data-target="#donate" href="">Donate</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
@@ -58,17 +59,14 @@
 					<div class="row fullscreen d-flex align-items-center justify-content-center">
 						<div class="banner-content col-lg-8">
 							<h1 class="text-white">
-								BLOG
+								Install DWM (Dynamic Window Manager) on Archcraft
 							</h1>
-							<p class="pt-20 pb-20 text-white">
-								Stuff about Archcraft: News, Updates, Guides, Tutorials, etc.
-							</p>
 						</div>											
 					</div>
 				</div>					
 			</section>
 			<!-- End banner Area -->	
-						
+
 			<!-- Start Donation Model Area -->
 			<div class="modal fade" id="donate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -185,7 +183,7 @@
 					<!-- Paypal End -->
 				  </div>
 					<div class="title text-center">
-						<a href="donate.html" class="genric-btn primary radius">More Options</a>
+						<a href="../donate.html" class="genric-btn primary radius">More Options</a>
 						<br />
 						<br />
 					</div>
@@ -205,7 +203,7 @@
 					</button>
 				  </div>
 				  <div class="modal-body">
-					<img src="img/upi_qr.jpeg" class="img-fluid" alt="Responsive image"></img>
+					<img src="../img/upi_qr.jpeg" class="img-fluid" alt="Responsive image"></img>
 				</div>
 				  </div>
 				</div>
@@ -213,110 +211,129 @@
 			</div>
 			<!-- End Donation Model Area -->
 
-			<!-- Start Blog Area -->
-			<section class="latest-blog-area section-gap" id="blog">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 single-blog">
-							<a href="blog/dwm.html">
-							<img class="img-fluid" src="img/b9.png" alt="">
-							<br></br>
-							<h4>Install DWM On Archcraft And Go Suckless</h4></a>
-							<p>
-								This article will help you to install DWM (A Dynamic Window Manager, Supports tiled, monocle and floating layouts) on Archcraft.
-							</p>
-							<p class="post-date">13th June, 2021</p>
+			<!-- Start Generic Area -->
+			<section class="about-generic-area section-gap">
+				<div class="container border-top-generic">
+						<p>Dwm is a dynamic window manager for X. It manages windows in tiled, monocle and floating layouts. All of the layouts can be applied dynamically, optimising the environment for the application in use and the task performed.</p>
+						<p>Thing is : Dwm is smaller, faster and simpler. And we'll keep it that way. That's the motto of Archcraft. </p>
+						<img src="img/dwm/main.png" class="img-fluid" alt="Responsive image">
+						<br>
+						<br>
+						<p>Pretty Simple, Hann? Let's install it on our Archcraft, Fire up a terminal and... </p>
+						<pre><code data-language="shell">$ sudo pacman -Syyu
+$ sudo pacman -S archcraft-dwm</code></pre>
+						<p>That's it! Yeah... DWM is installed on your Archcraft. Logout &amp; login to DWM, You'll see something like that...</p>
+						<img src="img/dwm/desktop.png" class="img-fluid" alt="Responsive image">
+						<br>
+						<br>
+						<h3>Key Bindings</h3>
+						<br>
+						<p>The <kbd>SUPER</kbd> or <kbd>WINDOWS</kbd> key is the default <b>Modkey</b>. Few important keybindings only, Rest are the same as default.</p>
+						<div class="progress-table-wrap">
+							<div class="progress-table">
+								<div class="table-head">
+									<div class="serial"><span class="fa fa-keyboard-o"></span></div>
+									<div class="country">Key</div>
+									<div class="visit">Action</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + [1..9]</kbd></div>
+									<div class="visit">Switch To Desktop 1,2...9</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + P</kbd></div>
+									<div class="visit">Open App Launcher (Default is dmenu)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + Return</kbd></div>
+									<div class="visit">Open Suckless Terminal (st)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + N</kbd></div>
+									<div class="visit">Open Network Menu (networkmanager_dmenu)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + X</kbd></div>
+									<div class="visit">Open Powermenu (Rofi)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + C</kbd></div>
+									<div class="visit">Kill The Client Window</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + Return</kbd></div>
+									<div class="visit">Open Alacritty Terminal (dwm-terminal)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + F</kbd></div>
+									<div class="visit">Open File Manager (dwm-file-manager)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + E</kbd></div>
+									<div class="visit">Open Text Editor (dwm-text-editor)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + L</kbd></div>
+									<div class="visit">Run Lock Screen Program (dwm-lock)</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + R</kbd></div>
+									<div class="visit">Reload / Restart DWM</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + Q</kbd></div>
+									<div class="visit">Quit DWM Directly</div>
+								</div>
+								<div class="table-row">
+									<div class="serial"><kbd>W</kbd></div>
+									<div class="country"><kbd>W + SHIFT + Mouse_1</kbd></div>
+									<div class="visit">Resize Floating Client Window with Left Button of Mouse</div>
+								</div>
+							</div>
 						</div>
-						<div class="col-lg-6 single-blog">
-							<a href="blog/calamares.html">
-							<img class="img-fluid" src="img/b7.png" alt="">
-							<br></br>
-							<h4>Install Archcraft With Calamares (With Encryption)</h4></a>
-							<p>
-								Step by step guide to install Archcraft with Calamares installer on UEFI/BIOS system, with optional encryption.
-							</p>
-							<p class="post-date">26th May, 2021</p>
-						</div>
-					</div>
-				</div>	
-				<br>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 single-blog">
-							<a href="blog/post_install.html">
-							<img class="img-fluid" src="img/b6.png" alt="">
-							<br></br>
-							<h4>Things To Do After Installing Archcraft OS</h4></a>
-							<p>
-								Some things you need to do after installing Archcraft OS for a better experience.
-							</p>
-							<p class="post-date">16th July, 2020</p>
-						</div>
-						<div class="col-lg-6 single-blog">
-							<a href="blog/build.html">
-							<img class="img-fluid" src="img/b5.png" alt="">
-							<br></br>
-							<h4>Build Archcraft ISO With Its Source</h4></a>
-							<p>
-								If you want to build the ISO yourself, here's a step by step guide to build Archcraft ISO.
-							</p>
-							<p class="post-date">16th July, 2020</p>
-						</div>						
-					</div>
-				</div>	
-				<br>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 single-blog">
-							<a href="blog/bios.html">
-							<img class="img-fluid" src="img/b3.png" alt="">
-							<br></br>
-							<h4>Install Archcraft On BIOS System (With Encryption)</h4></a>
-							<p>
-								Step by step guide to install Archcraft OS with CLI Installer (Expert Mode) on a BIOS system, with optional encryption.
-							</p>
-							<p class="post-date">13th July, 2020</p>
-						</div>
-						<div class="col-lg-6 single-blog">
-							<a href="blog/uefi.html">
-							<img class="img-fluid" src="img/b4.png" alt="">
-							<br></br>
-							<h4>Install Archcraft On UEFI System (With Encryption)</h4></a>
-							<p>
-								Step by step guide to install Archcraft OS with CLI Installer (Expert Mode) on a UEFI system, with optional encryption.
-							</p>
-							<p class="post-date">13th July, 2020</p>
-						</div>						
-					</div>
-				</div>	
-				<br>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 single-blog">
-							<a href="blog/usb.html">
-							<img class="img-fluid" src="img/b1.png" alt="">
-							<br></br>
-							<h4>Create A Bootable USB With Archcraft</h4></a>
-							<p>
-								This article will help you create a bootable USB to try Archcraft live or install it on your computer.
-							</p>
-							<p class="post-date">13th July, 2020</p>
-						</div>
-						<div class="col-lg-6 single-blog">
-							<a href="blog/grub.html">
-							<img class="img-fluid" src="img/b2.png" alt="">
-							<br></br>
-							<h4>Boot Archcraft ISO With GRUB2 Bootloader</h4></a>
-							<p>
-								Tutorial on how you can boot the Archcraft ISO with GRUB2 bootloader and test Archcraft live.
-							</p>
-							<p class="post-date">13th July, 2020</p>
-						</div>						
-					</div>
-				</div>	
+						<br>
+						<h3>Customization</h3>
+						<br>
+						<p><kbd>STARTUP PROGRAMS</kbd> : Edit <code>/usr/bin/start_dwm</code> script as root with your favorite text editor and add your startup programs under this section (Make sure you add an '&amp;' symbol at the end of the command or you'll not be able to login into DWM ) -</p>
+						<pre><code data-language="shell">## Add your autostart programs here --------------
+
+## -----------------------------------------------</code></pre>
+						<p><kbd>STATUS MONITOR</kbd> : We have two types of status monitors, <b>Icons</b> and <b>Text</b>, both present in <code>/usr/share/archcraft-dwm/bin/</code> directory as <b>slstatus_icons</b> and <b>slstatus_text</b>. To change between them, edit the same file above, and change this section - </p>
+						<pre><code data-language="shell">## Launch DWM status
+exec /usr/share/archcraft-dwm/bin/slstatus_icons &</code></pre>
+						<img src="img/dwm/dwm_1.png" class="img-fluid" alt="Responsive image">
+						<br>
+						<br>
+						<p><kbd>ROFI MENU</kbd> : By default, <b>dmenu</b> is used as App launcher. To use rofi instead, Edit <code>/usr/share/archcraft-dwm/bin/dwm-menu</code> script.</p>
+						<img src="img/dwm/dwm_2.png" class="img-fluid" alt="Responsive image">
+						<br>
+						<br>
+						<img src="img/dwm/dwm_3.png" class="img-fluid" alt="Responsive image">
+						<br>
+						<br>
+						<p><kbd>APPLICATIONS</kbd> : To launch applications of your choice with keybindings, Edit the scripts in <code>/usr/share/archcraft-dwm/bin</code> accordingly.</p>
+						<pre><code data-language="shell">dwm-file-manager
+dwm-lock
+dwm-terminal
+dwm-text-editor</code></pre>
+						<p><kbd>THEMES</kbd> : No theme settings are supplied in the package, You manually have to apply gtk and icon theme with <code>lxappearance</code>. I'm using "Rick" gtk theme (already installed on Archcraft) and "Papirus" icon theme in this setup. Use <b>papirus-folders</b> program to change folder colors to green or teal, whatever you prefer.</p>
+						<p>That's it for now, Enjoy DWM in Archcraft.</p>
+				</div>
 			</section>
-			<!-- End Blog Area -->
-			
+			<!-- End Generic Start -->		
+
 			<!-- BMAC -->
 			<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="adi1090x" data-description="Support me on Buy me a coffee!" data-message="Buy me a coffee" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
 
@@ -343,9 +360,9 @@
 							<div class="single-footer-widget">
 								<h6>Project Status</h6>
 								<div class="" id="mc_embed_signup">
-										<p>Active development? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""> <br />
-										Maintained? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""> <br />
-										Alive? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="img/elements/primary-check.png" alt=""></p>
+										<p>Active development? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""> <br />
+										Maintained? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""> <br />
+										Alive? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="img-fluid" src="../img/elements/primary-check.png" alt=""></p>
 								</div>
 							</div>
 						</div>
@@ -377,20 +394,20 @@
 			</footer>
 			<!-- End footer Area -->
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="../js/vendor/jquery-2.2.4.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="../js/vendor/bootstrap.min.js"></script>			
 			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-			<script src="js/owl.carousel.min.js"></script>			
-			<script src="js/jquery.sticky.js"></script>
-			<script src="js/jquery.nice-select.min.js"></script>			
-			<script src="js/parallax.min.js"></script>		
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
+  			<script src="../js/easing.min.js"></script>			
+			<script src="../js/hoverIntent.js"></script>
+			<script src="../js/superfish.min.js"></script>	
+			<script src="../js/jquery.ajaxchimp.min.js"></script>
+			<script src="../js/jquery.magnific-popup.min.js"></script>	
+			<script src="../js/owl.carousel.min.js"></script>			
+			<script src="../js/jquery.sticky.js"></script>
+			<script src="../js/jquery.nice-select.min.js"></script>			
+			<script src="../js/parallax.min.js"></script>		
+			<script src="../js/mail-script.js"></script>	
+			<script src="../js/main.js"></script>	
 		</body>
 	</html>

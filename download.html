@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" href="images/fav.svg">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/float-button.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -32,6 +33,21 @@
 							<li><a href="donate.html">Donate</a></li>
 						</ul>
 					</nav>
+
+				<!-- Floating Main -->
+				<menu>
+				  <a href="index.html" class="action"><i class="icon solid fa-home"></i></a>
+				  <a href="download.html" class="action"><i class="icon solid fa-download"></i></a>
+				  <a href="gallery.html" class="action"><i class="icon solid fa-camera"></i></a>
+				  <a href="donate.html" class="action"><i class="icon solid fa-gift"></i></a>
+				  <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+				</menu>
+				<script>
+					const trigger = document.querySelector("menu > .trigger");
+					trigger.addEventListener('click', (e) => {
+					  e.currentTarget.parentElement.classList.toggle("open");
+					});
+				</script>
 
 				<!-- Main -->
 					<div id="main">

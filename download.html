@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Archcraft : Download</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="images/fav.svg">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/float-button.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Archcraft</h1>
+						<p>Yet another minimal Linux distribution,<br />
+						based on <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="download.html" class="active">Download</a></li>
+							<li><a href="flavors.html">Flavors</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="https://wiki.archcraft.io" target="_blank">Wiki</a></li>
+							<li><a href="https://wiki.archcraft.io/news" target="_blank">News</a></li>
+							<li><a href="donate.html">Donate</a></li>
+						</ul>
+					</nav>
+
+				<!-- Floating Main -->
+				<menu>
+				  <a href="index.html" class="action"><i class="icon solid fa-home"></i></a>
+				  <a href="download.html" class="action"><i class="icon solid fa-download"></i></a>
+				  <a href="gallery.html" class="action"><i class="icon solid fa-camera"></i></a>
+				  <a href="donate.html" class="action"><i class="icon solid fa-gift"></i></a>
+				  <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+				</menu>
+				<script>
+					const trigger = document.querySelector("menu > .trigger");
+					trigger.addEventListener('click', (e) => {
+					  e.currentTarget.parentElement.classList.toggle("open");
+					});
+				</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Download -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Download Archcraft</h2>
+									<div class="col-12"><span class="image fit"><img src="https://raw.githubusercontent.com/archcraft-os/core-packages/main/calamares-config/files/calamares/branding/archcraft/welcome.png" alt="" /></span></div>
+									<p>You can download Archcraft from either github releases, sourceforge or by torrent.</p>
+								</header>
+								<ul class="alt">
+									<li></li>
+									<li><b><code>Latest Release</code></b> &nbsp;&nbsp;:&nbsp;&nbsp; archcraft-2022.04.07-x86_64.iso</li>
+									<li></li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="#second" class="button primary">Download</a></li>
+										<li><a href="https://github.com/archcraft-os/archcraft/blob/master/changelog.md" target="_blank" class="button">Changelog</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Options -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Available Options</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style2 fa-download"></span>
+										<h3>Github</h3>
+										<p>Download the ISO from github releases.</p>
+										<a href="https://github.com/archcraft-os/releases/releases/download/v22.04/archcraft-2022.04.07-x86_64.iso" class="button">Download</a>
+									</li>
+									<li>
+										<span class="icon solid major style5 fa-download"></span>
+										<h3>Sourceforge</h3>
+										<p>Get the latest ISO from sourceforge.</p>
+										<a href="https://sourceforge.net/projects/archcraft/files/latest/download" target="_blank" class="button">Download</a>
+									</li>
+									<li>
+										<span class="icon solid major style1 fa-download"></span>
+										<h3>Torrent</h3>
+										<p>Download the torrent file of the ISO.</p>
+										<a href="https://github.com/archcraft-os/releases/releases/download/v22.04/archcraft-2022.04.07-x86_64.iso.torrent" class="button">Download</a>
+									</li>
+								</ul>
+								<div align="left">
+										<blockquote>The username and password for live session is &nbsp;:&nbsp; <b>liveuser</b>
+										<br />Archcraft is only available for 64-bit architectures. There are no 32-bit, ARM or WSL editions &amp; perhaps, never going to be.</blockquote>
+								</div>
+							</section>
+
+						<!-- Verification -->
+							<section id="third" class="main special">
+								<header class="major">
+									<h2>Verify the ISO</h2>
+									<p>After downloading, you should verify the authenticity of the ISO.</p>
+								</header>
+								<div align="left">
+									<ul>
+										<li>First, Download <a href="https://github.com/archcraft-os/releases/releases/download/v22.04/archcraft-2022.04.07-x86_64.iso.sig">gpg signature</a> and <a href="https://github.com/archcraft-os/releases/releases/download/v22.04/archcraft-2022.04.07-x86_64.iso.sha256sum">sha256sum</a> files. Save them in the same directory as ISO.</li>
+										<li>Open the terminal and verify the details of the key on keyserver (any one)</li>
+										<pre><code>$ gpg --keyserver hkps://keys.gnupg.net --recv-keys 7DC81F73
+$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys 7DC81F73
+$ gpg --keyserver hkp://pgp.mit.edu --recv-keys 7DC81F73</code></pre>
+										<li>Verify the gpg signature by running...</li>
+										<pre><code>$ gpg --verify archcraft-2022.04.07-x86_64.iso.sig</code></pre>
+										<li>Finally, Verify the sha256sum checksum by running...</li>
+										<pre><code>$ sha256sum -c archcraft-2022.04.07-x86_64.iso.sha256sum</code></pre>
+									</ul>
+								</div>
+							</section>
+							
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Support Archcraft</h2>
+							<p>If you are enjoying Archcraft, Please consider donating to this project.
+							Your donations will help Archcraft to improve and grow and your support will keep it maintained, updated and alive.</p>
+							<ul class="actions">
+								<li><a href="donate.html" class="button">Donate</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Important Links</h2>
+							<p>Links to Archcraft's github page, ISO Source, ISO Releases, New Issue, and my github page respectively. Make sure you hit the star on Archcraft repositories.</p>
+							<ul class="icons">
+								<li><a href="https://github.com/archcraft-os" target="_blank" class="icon brands fa-github alt"><span class="label">Archcraft</span></a></li>
+								<li><a href="https://github.com/archcraft-os/archcraft" target="_blank" class="icon solid fa-code alt"><span class="label">Repository</span></a></li>
+								<li><a href="https://github.com/archcraft-os/releases" target="_blank" class="icon solid fa-folder-open alt"><span class="label">Releases</span></a></li>
+								<li><a href="https://github.com/archcraft-os/archcraft/issues/new" target="_blank" class="icon solid fa-bug alt"><span class="label">Issues</span></a></li>
+								<li><a href="https://github.com/adi1090x" target="_blank" class="icon solid fa-user alt"><span class="label">Adi1090x</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Archcraft | <a href="https://www.twitter.com/adi1090x" target="_blank">Aditya Shakya</a></p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

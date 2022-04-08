@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Archcraft : Flavors</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="shortcut icon" href="images/fav.svg">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/float-button.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<h1>Archcraft</h1>
+						<p>Yet another minimal Linux distribution,<br />
+						based on <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="download.html">Download</a></li>
+							<li><a href="flavors.html" class="active">Flavors</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="https://wiki.archcraft.io" target="_blank">Wiki</a></li>
+							<li><a href="https://wiki.archcraft.io/news" target="_blank">News</a></li>
+							<li><a href="donate.html">Donate</a></li>
+						</ul>
+					</nav>
+
+				<!-- Floating Main -->
+				<menu>
+				  <a href="index.html" class="action"><i class="icon solid fa-home"></i></a>
+				  <a href="download.html" class="action"><i class="icon solid fa-download"></i></a>
+				  <a href="gallery.html" class="action"><i class="icon solid fa-camera"></i></a>
+				  <a href="donate.html" class="action"><i class="icon solid fa-gift"></i></a>
+				  <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
+				</menu>
+				<script>
+					const trigger = document.querySelector("menu > .trigger");
+					trigger.addEventListener('click', (e) => {
+					  e.currentTarget.parentElement.classList.toggle("open");
+					});
+				</script>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Archcraft XFCE -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Archcraft XFCE</h2>
+										</header>
+										<p>This flavor of Archcraft comes with XFCE.
+										Xfce is a lightweight desktop environment, It aims to be fast and low on system resources.
+										Archcraft XFCE is highly customized and pre-configured. It's a ready to go XFCE system.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/archcraft-os/archcraft-xfce/releases/download/v21.11/archcraft-xfce-2021.11.30-x86_64.iso" class="button primary">Download</a></li>
+											<li><a href="https://github.com/archcraft-os/archcraft-xfce/releases" class="button" target="_blank">Releases</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/xfce/2.png" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Archcraft Lite -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Archcraft Lite</h2>
+										</header>
+										<p>Archcraft Lite is another flavor of Archcraft, targeted at intermediate/power Linux users.
+										Unlike main Archcraft, It does not provide you anything fancy.
+										Just a single window manager with few basic applications and utilities.</p>
+										<ul class="actions">
+											<li><a href="https://github.com/archcraft-os/archcraft-lite/releases/download/v21.11/archcraft-lite-2021.11.13-x86_64.iso" class="button primary">Download</a></li>
+											<li><a href="https://github.com/archcraft-os/archcraft-lite/releases" class="button" target="_blank">Releases</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/lite/2.png" alt="" /></span>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Support Archcraft</h2>
+							<p>If you are enjoying Archcraft, Please consider donating to this project.
+							Your donations will help Archcraft to improve and grow and your support will keep it maintained, updated and alive.</p>
+							<ul class="actions">
+								<li><a href="donate.html" class="button">Donate</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Important Links</h2>
+							<p>Links to Archcraft's github page, ISO Source, ISO Releases, New Issue, and my github page respectively. Make sure you hit the star on Archcraft repositories.</p>
+							<ul class="icons">
+								<li><a href="https://github.com/archcraft-os" target="_blank" class="icon brands fa-github alt"><span class="label">Archcraft</span></a></li>
+								<li><a href="https://github.com/archcraft-os/archcraft" target="_blank" class="icon solid fa-code alt"><span class="label">Repository</span></a></li>
+								<li><a href="https://github.com/archcraft-os/releases" target="_blank" class="icon solid fa-folder-open alt"><span class="label">Releases</span></a></li>
+								<li><a href="https://github.com/archcraft-os/archcraft/issues/new" target="_blank" class="icon solid fa-bug alt"><span class="label">Issues</span></a></li>
+								<li><a href="https://github.com/adi1090x" target="_blank" class="icon solid fa-user alt"><span class="label">Adi1090x</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Archcraft | <a href="https://www.twitter.com/adi1090x" target="_blank">Aditya Shakya</a></p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

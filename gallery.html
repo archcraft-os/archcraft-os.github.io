@@ -1,14 +1,64 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<!-- Primary Meta Tags -->
 		<title>Archcraft : Gallery</title>
+		<meta name="title" content="Archcraft : Gallery">
+		<meta name="description" content="Yet another minimal Linux distribution,
+		based on Arch Linux.">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://archcraft.io/gallery">
+		<meta property="og:title" content="Archcraft : Gallery">
+		<meta property="og:description" content="Yet another minimal Linux distribution,
+		based on Arch Linux.">
+		<meta property="og:image" content="https://archcraft.io/images/meta.jpg">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://archcraft.io/gallery">
+		<meta property="twitter:title" content="Archcraft : Gallery">
+		<meta property="twitter:description" content="Yet another minimal Linux distribution,
+		based on Arch Linux.">
+		<meta property="twitter:image" content="https://archcraft.io/images/meta.jpg">
+
+		<!-- Other -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="shortcut icon" href="images/fav.svg">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/glightbox.css" />
-		<link rel="stylesheet" href="assets/css/float-button.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Collapsible -->
+		<style>
+		.collapsible {
+		  width: 100%;
+		  margin-bottom: 20px;
+		  text-align: left;
+		  font-family: "Source Sans Pro", Helvetica, sans-serif;
+		  font-size: 14pt;
+		  font-weight: bold;
+		}
+
+		.collapsible:after {
+		  content: '\002B';
+		  color: white;
+		  font-weight: bold;
+		  float: right;
+		}
+
+		.collapsible.active:after {
+		  content: "\2212";
+		}
+
+		.content {
+		  max-height: 0;
+		  overflow: hidden;
+		  transition: max-height 0.2s ease-out;
+		}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -32,24 +82,9 @@
 							<li><a href="gallery.html" class="active">Gallery</a></li>
 							<li><a href="https://wiki.archcraft.io" target="_blank">Wiki</a></li>
 							<li><a href="https://wiki.archcraft.io/news" target="_blank">News</a></li>
-							<li><a href="donate.html">Donate</a></li>
+							<li><a href="more.html">More</a></li>
 						</ul>
 					</nav>
-
-				<!-- Floating Main -->
-				<menu>
-				  <a href="index.html" class="action"><i class="icon solid fa-home"></i></a>
-				  <a href="download.html" class="action"><i class="icon solid fa-download"></i></a>
-				  <a href="gallery.html" class="action"><i class="icon solid fa-camera"></i></a>
-				  <a href="donate.html" class="action"><i class="icon solid fa-gift"></i></a>
-				  <a href="#" class="trigger"><i class="fas fa-plus"></i></a>
-				</menu>
-				<script>
-					const trigger = document.querySelector("menu > .trigger");
-					trigger.addEventListener('click', (e) => {
-					  e.currentTarget.parentElement.classList.toggle("open");
-					});
-				</script>
 
 				<!-- Main -->
 					<div id="main">
@@ -58,1078 +93,922 @@
 							<section id="first" class="main special">
 								<header class="major">
 									<h2>Gallery</h2>
-									<p>Screenshots of all available flavors and window managers.</p>
+									<p>Screenshots of all window managers, wayland compositors and desktop environments.</p>
 								</header>
 
+								<!-- Window Managers -->
+								<h3 align="left"><strong>Window Managers</strong></h3>
 								<!-- Openbox -->
-								<h3 align="left"><strong>Openbox</strong></h3>
+								<button type="button" class="collapsible">Openbox</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/openbox/1.png" class="glightbox">
-														<img src="images/openbox/1.png" alt="image" />
+													<a href="images/wm/openbox/1.png" class="glightbox">
+														<img src="images/wm/openbox/1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/2.png" class="glightbox">
-														<img src="images/openbox/2.png" alt="image" />
+													<a href="images/wm/openbox/2.png" class="glightbox">
+														<img src="images/wm/openbox/2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/3.png" class="glightbox">
-														<img src="images/openbox/3.png" alt="image" />
+													<a href="images/wm/openbox/3.png" class="glightbox">
+														<img src="images/wm/openbox/3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/4.png" class="glightbox">
-														<img src="images/openbox/4.png" alt="image" />
+													<a href="images/wm/openbox/4.png" class="glightbox">
+														<img src="images/wm/openbox/4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/5.png" class="glightbox">
-														<img src="images/openbox/5.png" alt="image" />
+													<a href="images/wm/openbox/5.png" class="glightbox">
+														<img src="images/wm/openbox/5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/6.png" class="glightbox">
-														<img src="images/openbox/6.png" alt="image" />
+													<a href="images/wm/openbox/6.png" class="glightbox">
+														<img src="images/wm/openbox/6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/7.png" class="glightbox">
-														<img src="images/openbox/7.png" alt="image" />
+													<a href="images/wm/openbox/7.png" class="glightbox">
+														<img src="images/wm/openbox/7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/8.png" class="glightbox">
-														<img src="images/openbox/8.png" alt="image" />
+													<a href="images/wm/openbox/8.png" class="glightbox">
+														<img src="images/wm/openbox/8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/9.png" class="glightbox">
-														<img src="images/openbox/9.png" alt="image" />
+													<a href="images/wm/openbox/9.png" class="glightbox">
+														<img src="images/wm/openbox/9.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/openbox/10.png" class="glightbox">
-														<img src="images/openbox/10.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/11.png" class="glightbox">
-														<img src="images/openbox/11.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/12.png" class="glightbox">
-														<img src="images/openbox/12.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/13.png" class="glightbox">
-														<img src="images/openbox/13.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/14.png" class="glightbox">
-														<img src="images/openbox/14.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/15.png" class="glightbox">
-														<img src="images/openbox/15.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/16.png" class="glightbox">
-														<img src="images/openbox/16.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/17.png" class="glightbox">
-														<img src="images/openbox/17.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/18.png" class="glightbox">
-														<img src="images/openbox/18.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/19.png" class="glightbox">
-														<img src="images/openbox/19.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/20.png" class="glightbox">
-														<img src="images/openbox/20.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/openbox/21.png" class="glightbox">
-														<img src="images/openbox/21.png" alt="image" />
+													<a href="images/wm/openbox/10.png" class="glightbox">
+														<img src="images/wm/openbox/10.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Bspwm -->
-								<h3 align="left"><strong>Bspwm</strong></h3>
+								<button type="button" class="collapsible">Bspwm</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/bspwm/tiles.gif" class="glightbox">
-														<img src="images/bspwm/tiles.gif" alt="image" />
+													<a href="images/wm/bspwm/1.png" class="glightbox">
+														<img src="images/wm/bspwm/1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/1.png" class="glightbox">
-														<img src="images/bspwm/1.png" alt="image" />
+													<a href="images/wm/bspwm/2.png" class="glightbox">
+														<img src="images/wm/bspwm/2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/2.png" class="glightbox">
-														<img src="images/bspwm/2.png" alt="image" />
+													<a href="images/wm/bspwm/3.png" class="glightbox">
+														<img src="images/wm/bspwm/3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/3.png" class="glightbox">
-														<img src="images/bspwm/3.png" alt="image" />
+													<a href="images/wm/bspwm/4.png" class="glightbox">
+														<img src="images/wm/bspwm/4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/4.png" class="glightbox">
-														<img src="images/bspwm/4.png" alt="image" />
+													<a href="images/wm/bspwm/5.png" class="glightbox">
+														<img src="images/wm/bspwm/5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/5.png" class="glightbox">
-														<img src="images/bspwm/5.png" alt="image" />
+													<a href="images/wm/bspwm/6.png" class="glightbox">
+														<img src="images/wm/bspwm/6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/6.png" class="glightbox">
-														<img src="images/bspwm/6.png" alt="image" />
+													<a href="images/wm/bspwm/7.png" class="glightbox">
+														<img src="images/wm/bspwm/7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/7.png" class="glightbox">
-														<img src="images/bspwm/7.png" alt="image" />
+													<a href="images/wm/bspwm/8.png" class="glightbox">
+														<img src="images/wm/bspwm/8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/8.png" class="glightbox">
-														<img src="images/bspwm/8.png" alt="image" />
+													<a href="images/wm/bspwm/9.png" class="glightbox">
+														<img src="images/wm/bspwm/9.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/bspwm/9.png" class="glightbox">
-														<img src="images/bspwm/9.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/10.png" class="glightbox">
-														<img src="images/bspwm/10.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/11.png" class="glightbox">
-														<img src="images/bspwm/11.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/12.png" class="glightbox">
-														<img src="images/bspwm/12.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/13.png" class="glightbox">
-														<img src="images/bspwm/13.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/14.png" class="glightbox">
-														<img src="images/bspwm/14.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/15.png" class="glightbox">
-														<img src="images/bspwm/15.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/16.png" class="glightbox">
-														<img src="images/bspwm/16.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/17.png" class="glightbox">
-														<img src="images/bspwm/17.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/18.png" class="glightbox">
-														<img src="images/bspwm/18.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/19.png" class="glightbox">
-														<img src="images/bspwm/19.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/bspwm/20.png" class="glightbox">
-														<img src="images/bspwm/20.png" alt="image" />
+													<a href="images/wm/bspwm/10.png" class="glightbox">
+														<img src="images/wm/bspwm/10.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- DWM -->
-								<h3 align="left"><strong>DWM</strong></h3>
+								<button type="button" class="collapsible">DWM</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/dwm/0.png" class="glightbox">
-														<img src="images/dwm/0.png" alt="image" />
+													<a href="images/wm/dwm/0.png" class="glightbox">
+														<img src="images/wm/dwm/0.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/1.png" class="glightbox">
-														<img src="images/dwm/1.png" alt="image" />
+													<a href="images/wm/dwm/1.png" class="glightbox">
+														<img src="images/wm/dwm/1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/2.png" class="glightbox">
-														<img src="images/dwm/2.png" alt="image" />
+													<a href="images/wm/dwm/2.png" class="glightbox">
+														<img src="images/wm/dwm/2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/3.png" class="glightbox">
-														<img src="images/dwm/3.png" alt="image" />
+													<a href="images/wm/dwm/3.png" class="glightbox">
+														<img src="images/wm/dwm/3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/4.png" class="glightbox">
-														<img src="images/dwm/4.png" alt="image" />
+													<a href="images/wm/dwm/4.png" class="glightbox">
+														<img src="images/wm/dwm/4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/5.png" class="glightbox">
-														<img src="images/dwm/5.png" alt="image" />
+													<a href="images/wm/dwm/5.png" class="glightbox">
+														<img src="images/wm/dwm/5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/6.png" class="glightbox">
-														<img src="images/dwm/6.png" alt="image" />
+													<a href="images/wm/dwm/6.png" class="glightbox">
+														<img src="images/wm/dwm/6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/7.png" class="glightbox">
-														<img src="images/dwm/7.png" alt="image" />
+													<a href="images/wm/dwm/7.png" class="glightbox">
+														<img src="images/wm/dwm/7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/dwm/8.png" class="glightbox">
-														<img src="images/dwm/8.png" alt="image" />
+													<a href="images/wm/dwm/8.png" class="glightbox">
+														<img src="images/wm/dwm/8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- I3 -->
-								<h3 align="left"><strong>I3wm</strong></h3>
+								<button type="button" class="collapsible">I3wm</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/i3wm.png" class="glightbox">
-														<img src="images/i3wm.png" alt="image" />
+													<a href="images/wm/i3wm/i3wm.png" class="glightbox">
+														<img src="images/wm/i3wm/i3wm.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Xmonad -->
-								<h3 align="left"><strong>Xmonad</strong></h3>
+								<button type="button" class="collapsible">Xmonad</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/xmonad.png" class="glightbox">
-														<img src="images/xmonad.png" alt="image" />
+													<a href="images/wm/xmonad/xmonad.png" class="glightbox">
+														<img src="images/wm/xmonad/xmonad.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Herbstluftwm -->
-								<h3 align="left"><strong>Herbstluftwm</strong></h3>
+								<button type="button" class="collapsible">Herbstluftwm</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_1.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_1.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_1.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_2.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_2.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_2.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_3.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_3.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_3.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_4.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_4.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_4.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_5.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_5.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_5.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_6.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_6.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_6.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/herbstluftwm/herb_7.png" class="glightbox">
-														<img src="images/herbstluftwm/herb_7.png" alt="image" />
+													<a href="images/wm/herbstluftwm/herb_7.png" class="glightbox">
+														<img src="images/wm/herbstluftwm/herb_7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Berry -->
-								<h3 align="left"><strong>Berry</strong></h3>
+								<button type="button" class="collapsible">Berry</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/berry.png" class="glightbox">
-														<img src="images/berry.png" alt="image" />
+													<a href="images/wm/berry/berry.png" class="glightbox">
+														<img src="images/wm/berry/berry.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Fluxbox -->
-								<h3 align="left"><strong>Fluxbox</strong></h3>
+								<button type="button" class="collapsible">Fluxbox</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/fluxbox/fb_1.png" class="glightbox">
-														<img src="images/fluxbox/fb_1.png" alt="image" />
+													<a href="images/wm/fluxbox/fb_1.png" class="glightbox">
+														<img src="images/wm/fluxbox/fb_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/fluxbox/fb_2.png" class="glightbox">
-														<img src="images/fluxbox/fb_2.png" alt="image" />
+													<a href="images/wm/fluxbox/fb_2.png" class="glightbox">
+														<img src="images/wm/fluxbox/fb_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/fluxbox/fb_3.png" class="glightbox">
-														<img src="images/fluxbox/fb_3.png" alt="image" />
+													<a href="images/wm/fluxbox/fb_3.png" class="glightbox">
+														<img src="images/wm/fluxbox/fb_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/fluxbox/fb_4.png" class="glightbox">
-														<img src="images/fluxbox/fb_4.png" alt="image" />
+													<a href="images/wm/fluxbox/fb_4.png" class="glightbox">
+														<img src="images/wm/fluxbox/fb_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
+								<!-- Wayland Compositors -->
+								<h3 align="left"><strong>Wayland Compositors</strong></h3>
 								<!-- Sway -->
-								<h3 align="left"><strong>Sway</strong></h3>
+								<button type="button" class="collapsible">Sway</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/sway/sway_1.png" class="glightbox">
-														<img src="images/sway/sway_1.png" alt="image" />
+													<a href="images/wc/sway/sway_1.png" class="glightbox">
+														<img src="images/wc/sway/sway_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_2.png" class="glightbox">
-														<img src="images/sway/sway_2.png" alt="image" />
+													<a href="images/wc/sway/sway_2.png" class="glightbox">
+														<img src="images/wc/sway/sway_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_3.png" class="glightbox">
-														<img src="images/sway/sway_3.png" alt="image" />
+													<a href="images/wc/sway/sway_3.png" class="glightbox">
+														<img src="images/wc/sway/sway_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_4.png" class="glightbox">
-														<img src="images/sway/sway_4.png" alt="image" />
+													<a href="images/wc/sway/sway_4.png" class="glightbox">
+														<img src="images/wc/sway/sway_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_5.png" class="glightbox">
-														<img src="images/sway/sway_5.png" alt="image" />
+													<a href="images/wc/sway/sway_5.png" class="glightbox">
+														<img src="images/wc/sway/sway_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_6.png" class="glightbox">
-														<img src="images/sway/sway_6.png" alt="image" />
+													<a href="images/wc/sway/sway_6.png" class="glightbox">
+														<img src="images/wc/sway/sway_6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/sway/sway_7.png" class="glightbox">
-														<img src="images/sway/sway_7.png" alt="image" />
+													<a href="images/wc/sway/sway_7.png" class="glightbox">
+														<img src="images/wc/sway/sway_7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Wayfire -->
-								<h3 align="left"><strong>Wayfire</strong></h3>
+								<button type="button" class="collapsible">Wayfire</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/wayfire.png" class="glightbox">
-														<img src="images/wayfire.png" alt="image" />
+													<a href="images/wc/wayfire/wayfire.png" class="glightbox">
+														<img src="images/wc/wayfire/wayfire.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Hyprland -->
-								<h3 align="left"><strong>Hyprland</strong></h3>
+								<button type="button" class="collapsible">Hyprland</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/hyprland/dark/hypr_dark_1.png" class="glightbox">
-														<img src="images/hyprland/dark/hypr_dark_1.png" alt="image" />
+													<a href="images/wc/hyprland/dark/hypr_dark_1.png" class="glightbox">
+														<img src="images/wc/hyprland/dark/hypr_dark_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/dark/hypr_dark_2.png" class="glightbox">
-														<img src="images/hyprland/dark/hypr_dark_2.png" alt="image" />
+													<a href="images/wc/hyprland/dark/hypr_dark_2.png" class="glightbox">
+														<img src="images/wc/hyprland/dark/hypr_dark_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/dark/hypr_dark_3.png" class="glightbox">
-														<img src="images/hyprland/dark/hypr_dark_3.png" alt="image" />
+													<a href="images/wc/hyprland/dark/hypr_dark_3.png" class="glightbox">
+														<img src="images/wc/hyprland/dark/hypr_dark_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/dark/hypr_dark_4.png" class="glightbox">
-														<img src="images/hyprland/dark/hypr_dark_4.png" alt="image" />
+													<a href="images/wc/hyprland/dark/hypr_dark_4.png" class="glightbox">
+														<img src="images/wc/hyprland/dark/hypr_dark_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/dark/hypr_dark_5.png" class="glightbox">
-														<img src="images/hyprland/dark/hypr_dark_5.png" alt="image" />
+													<a href="images/wc/hyprland/dark/hypr_dark_5.png" class="glightbox">
+														<img src="images/wc/hyprland/dark/hypr_dark_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/catppuccin/hypr_catppuccin_1.png" class="glightbox">
-														<img src="images/hyprland/catppuccin/hypr_catppuccin_1.png" alt="image" />
+													<a href="images/wc/hyprland/catppuccin/hypr_catppuccin_1.png" class="glightbox">
+														<img src="images/wc/hyprland/catppuccin/hypr_catppuccin_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/catppuccin/hypr_catppuccin_2.png" class="glightbox">
-														<img src="images/hyprland/catppuccin/hypr_catppuccin_2.png" alt="image" />
+													<a href="images/wc/hyprland/catppuccin/hypr_catppuccin_2.png" class="glightbox">
+														<img src="images/wc/hyprland/catppuccin/hypr_catppuccin_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/catppuccin/hypr_catppuccin_3.png" class="glightbox">
-														<img src="images/hyprland/catppuccin/hypr_catppuccin_3.png" alt="image" />
+													<a href="images/wc/hyprland/catppuccin/hypr_catppuccin_3.png" class="glightbox">
+														<img src="images/wc/hyprland/catppuccin/hypr_catppuccin_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/catppuccin/hypr_catppuccin_4.png" class="glightbox">
-														<img src="images/hyprland/catppuccin/hypr_catppuccin_4.png" alt="image" />
+													<a href="images/wc/hyprland/catppuccin/hypr_catppuccin_4.png" class="glightbox">
+														<img src="images/wc/hyprland/catppuccin/hypr_catppuccin_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/hyprland/catppuccin/hypr_catppuccin_5.png" class="glightbox">
-														<img src="images/hyprland/catppuccin/hypr_catppuccin_5.png" alt="image" />
+													<a href="images/wc/hyprland/catppuccin/hypr_catppuccin_5.png" class="glightbox">
+														<img src="images/wc/hyprland/catppuccin/hypr_catppuccin_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- River -->
-								<h3 align="left"><strong>River</strong></h3>
+								<button type="button" class="collapsible">River</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/river/River_1.png" class="glightbox">
-														<img src="images/river/River_1.png" alt="image" />
+													<a href="images/wc/river/River_1.png" class="glightbox">
+														<img src="images/wc/river/River_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_2.png" class="glightbox">
-														<img src="images/river/River_2.png" alt="image" />
+													<a href="images/wc/river/River_2.png" class="glightbox">
+														<img src="images/wc/river/River_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_3.png" class="glightbox">
-														<img src="images/river/River_3.png" alt="image" />
+													<a href="images/wc/river/River_3.png" class="glightbox">
+														<img src="images/wc/river/River_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_4.png" class="glightbox">
-														<img src="images/river/River_4.png" alt="image" />
+													<a href="images/wc/river/River_4.png" class="glightbox">
+														<img src="images/wc/river/River_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_5.png" class="glightbox">
-														<img src="images/river/River_5.png" alt="image" />
+													<a href="images/wc/river/River_5.png" class="glightbox">
+														<img src="images/wc/river/River_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_6.png" class="glightbox">
-														<img src="images/river/River_6.png" alt="image" />
+													<a href="images/wc/river/River_6.png" class="glightbox">
+														<img src="images/wc/river/River_6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_7.png" class="glightbox">
-														<img src="images/river/River_7.png" alt="image" />
+													<a href="images/wc/river/River_7.png" class="glightbox">
+														<img src="images/wc/river/River_7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_8.png" class="glightbox">
-														<img src="images/river/River_8.png" alt="image" />
+													<a href="images/wc/river/River_8.png" class="glightbox">
+														<img src="images/wc/river/River_8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/river/River_9.png" class="glightbox">
-														<img src="images/river/River_9.png" alt="image" />
+													<a href="images/wc/river/River_9.png" class="glightbox">
+														<img src="images/wc/river/River_9.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- NEWM -->
-								<h3 align="left"><strong>NEWM</strong></h3>
+								<button type="button" class="collapsible">NEWM</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_1.png" class="glightbox">
-														<img src="images/newm/blur/newm_1.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_1.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_2.png" class="glightbox">
-														<img src="images/newm/blur/newm_2.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_2.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_3.png" class="glightbox">
-														<img src="images/newm/blur/newm_3.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_3.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_4.png" class="glightbox">
-														<img src="images/newm/blur/newm_4.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_4.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_5.png" class="glightbox">
-														<img src="images/newm/blur/newm_5.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_5.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/blur/newm_6.png" class="glightbox">
-														<img src="images/newm/blur/newm_6.png" alt="image" />
+													<a href="images/wc/newm/blur/newm_6.png" class="glightbox">
+														<img src="images/wc/newm/blur/newm_6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_1.png" class="glightbox">
-														<img src="images/newm/solid/newm_1.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_1.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_2.png" class="glightbox">
-														<img src="images/newm/solid/newm_2.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_2.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_3.png" class="glightbox">
-														<img src="images/newm/solid/newm_3.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_3.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_4.png" class="glightbox">
-														<img src="images/newm/solid/newm_4.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_4.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_5.png" class="glightbox">
-														<img src="images/newm/solid/newm_5.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_5.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/newm/solid/newm_6.png" class="glightbox">
-														<img src="images/newm/solid/newm_6.png" alt="image" />
+													<a href="images/wc/newm/solid/newm_6.png" class="glightbox">
+														<img src="images/wc/newm/solid/newm_6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
-								<!-- Lite 
-								<h3 align="left"><strong>Archcraft Lite</strong></h3>
-								<section>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12">
-												<span class="image fit">
-													<a href="images/lite/1.png" class="glightbox">
-														<img src="images/lite/1.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/lite/2.png" class="glightbox">
-														<img src="images/lite/2.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/lite/3.png" class="glightbox">
-														<img src="images/lite/3.png" alt="image" />
-													</a>
-												</span>
-											</div>
-											<div class="col-4">
-												<span class="image fit">
-													<a href="images/lite/4.png" class="glightbox">
-														<img src="images/lite/4.png" alt="image" />
-													</a>
-												</span>
-											</div>
-										</div>
-									</div>
-								</section> -->
-
+								<!-- Desktop Environments -->
+								<h3 align="left"><strong>Desktop Environments</strong></h3>
 								<!-- Archcraft XFCE -->
-								<h3 align="left"><strong>Archcraft XFCE</strong></h3>
+								<button type="button" class="collapsible">Archcraft XFCE</button>
+								<div class="content">
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/xfce/0.png" class="glightbox">
-														<img src="images/xfce/0.png" alt="image" />
+													<a href="images/de/xfce/0.png" class="glightbox">
+														<img src="images/de/xfce/0.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/2.png" class="glightbox">
-														<img src="images/xfce/2.png" alt="image" />
+													<a href="images/de/xfce/2.png" class="glightbox">
+														<img src="images/de/xfce/2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/3.png" class="glightbox">
-														<img src="images/xfce/3.png" alt="image" />
+													<a href="images/de/xfce/3.png" class="glightbox">
+														<img src="images/de/xfce/3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/4.png" class="glightbox">
-														<img src="images/xfce/4.png" alt="image" />
+													<a href="images/de/xfce/4.png" class="glightbox">
+														<img src="images/de/xfce/4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/5.png" class="glightbox">
-														<img src="images/xfce/5.png" alt="image" />
+													<a href="images/de/xfce/5.png" class="glightbox">
+														<img src="images/de/xfce/5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/6.png" class="glightbox">
-														<img src="images/xfce/6.png" alt="image" />
+													<a href="images/de/xfce/6.png" class="glightbox">
+														<img src="images/de/xfce/6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/7.png" class="glightbox">
-														<img src="images/xfce/7.png" alt="image" />
+													<a href="images/de/xfce/7.png" class="glightbox">
+														<img src="images/de/xfce/7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/8.png" class="glightbox">
-														<img src="images/xfce/8.png" alt="image" />
+													<a href="images/de/xfce/8.png" class="glightbox">
+														<img src="images/de/xfce/8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/9.png" class="glightbox">
-														<img src="images/xfce/9.png" alt="image" />
+													<a href="images/de/xfce/9.png" class="glightbox">
+														<img src="images/de/xfce/9.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/10.png" class="glightbox">
-														<img src="images/xfce/10.png" alt="image" />
+													<a href="images/de/xfce/10.png" class="glightbox">
+														<img src="images/de/xfce/10.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/11.png" class="glightbox">
-														<img src="images/xfce/11.png" alt="image" />
+													<a href="images/de/xfce/11.png" class="glightbox">
+														<img src="images/de/xfce/11.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/12.png" class="glightbox">
-														<img src="images/xfce/12.png" alt="image" />
+													<a href="images/de/xfce/12.png" class="glightbox">
+														<img src="images/de/xfce/12.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/13.png" class="glightbox">
-														<img src="images/xfce/13.png" alt="image" />
+													<a href="images/de/xfce/13.png" class="glightbox">
+														<img src="images/de/xfce/13.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/14.png" class="glightbox">
-														<img src="images/xfce/14.png" alt="image" />
+													<a href="images/de/xfce/14.png" class="glightbox">
+														<img src="images/de/xfce/14.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/15.png" class="glightbox">
-														<img src="images/xfce/15.png" alt="image" />
+													<a href="images/de/xfce/15.png" class="glightbox">
+														<img src="images/de/xfce/15.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/xfce/16.png" class="glightbox">
-														<img src="images/xfce/16.png" alt="image" />
+													<a href="images/de/xfce/16.png" class="glightbox">
+														<img src="images/de/xfce/16.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 								<!-- Archcraft LXDE -->
-								<h3 align="left"><strong>Archcraft LXDE</strong></h3>
+								<button type="button" class="collapsible">Archcraft LXDE</button>
+								<div class="content">
 								<h4 align="left"><strong>Desktop</strong></h4>
 								<section>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/lxde/1.png" class="glightbox">
-														<img src="images/lxde/1.png" alt="image" />
+													<a href="images/de/lxde/1.png" class="glightbox">
+														<img src="images/de/lxde/1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/2.png" class="glightbox">
-														<img src="images/lxde/2.png" alt="image" />
+													<a href="images/de/lxde/2.png" class="glightbox">
+														<img src="images/de/lxde/2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/3.png" class="glightbox">
-														<img src="images/lxde/3.png" alt="image" />
+													<a href="images/de/lxde/3.png" class="glightbox">
+														<img src="images/de/lxde/3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/4.png" class="glightbox">
-														<img src="images/lxde/4.png" alt="image" />
+													<a href="images/de/lxde/4.png" class="glightbox">
+														<img src="images/de/lxde/4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/5.png" class="glightbox">
-														<img src="images/lxde/5.png" alt="image" />
+													<a href="images/de/lxde/5.png" class="glightbox">
+														<img src="images/de/lxde/5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/6.png" class="glightbox">
-														<img src="images/lxde/6.png" alt="image" />
+													<a href="images/de/lxde/6.png" class="glightbox">
+														<img src="images/de/lxde/6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/7.png" class="glightbox">
-														<img src="images/lxde/7.png" alt="image" />
+													<a href="images/de/lxde/7.png" class="glightbox">
+														<img src="images/de/lxde/7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/8.png" class="glightbox">
-														<img src="images/lxde/8.png" alt="image" />
+													<a href="images/de/lxde/8.png" class="glightbox">
+														<img src="images/de/lxde/8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/9.png" class="glightbox">
-														<img src="images/lxde/9.png" alt="image" />
+													<a href="images/de/lxde/9.png" class="glightbox">
+														<img src="images/de/lxde/9.png" alt="image" />
 													</a>
 												</span>
 											</div>
@@ -1142,112 +1021,113 @@
 										<div class="row gtr-uniform">
 											<div class="col-12">
 												<span class="image fit">
-													<a href="images/lxde/s1.png" class="glightbox">
-														<img src="images/lxde/s1.png" alt="image" />
+													<a href="images/de/lxde/s1.png" class="glightbox">
+														<img src="images/de/lxde/s1.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s2.png" class="glightbox">
-														<img src="images/lxde/s2.png" alt="image" />
+													<a href="images/de/lxde/s2.png" class="glightbox">
+														<img src="images/de/lxde/s2.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s3.png" class="glightbox">
-														<img src="images/lxde/s3.png" alt="image" />
+													<a href="images/de/lxde/s3.png" class="glightbox">
+														<img src="images/de/lxde/s3.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s4.png" class="glightbox">
-														<img src="images/lxde/s4.png" alt="image" />
+													<a href="images/de/lxde/s4.png" class="glightbox">
+														<img src="images/de/lxde/s4.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s5.png" class="glightbox">
-														<img src="images/lxde/s5.png" alt="image" />
+													<a href="images/de/lxde/s5.png" class="glightbox">
+														<img src="images/de/lxde/s5.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s6.png" class="glightbox">
-														<img src="images/lxde/s6.png" alt="image" />
+													<a href="images/de/lxde/s6.png" class="glightbox">
+														<img src="images/de/lxde/s6.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s7.png" class="glightbox">
-														<img src="images/lxde/s7.png" alt="image" />
+													<a href="images/de/lxde/s7.png" class="glightbox">
+														<img src="images/de/lxde/s7.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s8.png" class="glightbox">
-														<img src="images/lxde/s8.png" alt="image" />
+													<a href="images/de/lxde/s8.png" class="glightbox">
+														<img src="images/de/lxde/s8.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s9.png" class="glightbox">
-														<img src="images/lxde/s9.png" alt="image" />
+													<a href="images/de/lxde/s9.png" class="glightbox">
+														<img src="images/de/lxde/s9.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s10.png" class="glightbox">
-														<img src="images/lxde/s10.png" alt="image" />
+													<a href="images/de/lxde/s10.png" class="glightbox">
+														<img src="images/de/lxde/s10.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s11.png" class="glightbox">
-														<img src="images/lxde/s11.png" alt="image" />
+													<a href="images/de/lxde/s11.png" class="glightbox">
+														<img src="images/de/lxde/s11.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s12.png" class="glightbox">
-														<img src="images/lxde/s12.png" alt="image" />
+													<a href="images/de/lxde/s12.png" class="glightbox">
+														<img src="images/de/lxde/s12.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s13.png" class="glightbox">
-														<img src="images/lxde/s13.png" alt="image" />
+													<a href="images/de/lxde/s13.png" class="glightbox">
+														<img src="images/de/lxde/s13.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s14.png" class="glightbox">
-														<img src="images/lxde/s14.png" alt="image" />
+													<a href="images/de/lxde/s14.png" class="glightbox">
+														<img src="images/de/lxde/s14.png" alt="image" />
 													</a>
 												</span>
 											</div>
 											<div class="col-4">
 												<span class="image fit">
-													<a href="images/lxde/s15.png" class="glightbox">
-														<img src="images/lxde/s15.png" alt="image" />
+													<a href="images/de/lxde/s15.png" class="glightbox">
+														<img src="images/de/lxde/s15.png" alt="image" />
 													</a>
 												</span>
 											</div>
 										</div>
 									</div>
 								</section>
+								</div>
 
 							</section>							
 					</div>
@@ -1255,20 +1135,20 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Support Archcraft</h2>
-							<p>If you are enjoying Archcraft, Please consider donating to this project.
-							Your donations will help Archcraft to improve and grow and your support will keep it maintained, updated and alive.</p>
+							<h2>Sponsor</h2>
+							<p>If you are enjoying Archcraft, Please consider sponsoring me on github.
+							Your sponsorship will help Archcraft to improve and grow and your support will keep it maintained, updated and alive.</p>
 							<ul class="actions">
-								<li><a href="donate.html" class="button">Donate</a></li>
+								<li><a href="https://github.com/sponsors/adi1090x" class="button">Sponsor</a></li>
 							</ul>
 						</section>
 						<section>
 							<h2>Important Links</h2>
-							<p>Links to Archcraft's github page, ISO Source, ISO Releases, New Issue, and my github page respectively. Make sure you hit the star on Archcraft repositories.</p>
+							<p>Links to Archcraft's github page, ISO source, Releases, Issues, and my github profile respectively. Make sure you hit the star on Archcraft repositories.</p>
 							<ul class="icons">
 								<li><a href="https://github.com/archcraft-os" target="_blank" class="icon brands fa-github alt"><span class="label">Archcraft</span></a></li>
 								<li><a href="https://github.com/archcraft-os/archcraft" target="_blank" class="icon solid fa-code alt"><span class="label">Repository</span></a></li>
-								<li><a href="https://github.com/archcraft-os/releases" target="_blank" class="icon solid fa-folder-open alt"><span class="label">Releases</span></a></li>
+								<li><a href="https://sourceforge.net/projects/archcraft/files/" target="_blank" class="icon solid fa-folder-open alt"><span class="label">Releases</span></a></li>
 								<li><a href="https://github.com/archcraft-os/archcraft/issues/new" target="_blank" class="icon solid fa-bug alt"><span class="label">Issues</span></a></li>
 								<li><a href="https://github.com/adi1090x" target="_blank" class="icon solid fa-user alt"><span class="label">Adi1090x</span></a></li>
 							</ul>
@@ -1287,6 +1167,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/glightbox.js"></script>
+			<!-- Image Viewer -->
 			<script>
 				var lightbox = GLightbox();
 				lightbox.on('open', (target) => {
@@ -1330,6 +1211,22 @@
 					selector: '.glightbox4'
 				});
 			</script>
-			
+			<!-- Collapsible -->
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				  content.style.maxHeight = null;
+				} else {
+				  content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			  });
+			}
+			</script>
 	</body>
 </html>

@@ -1,0 +1,25 @@
+.i18n-languages {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: #32353c;
+    padding-top: 0.3em !important;
+    border-radius: 8px;
+}
+
+.i18n-languages li a {
+    pointer-events: all;
+    margin: 0.4em;
+    padding: 0em !important;
+    height: 0em !important;
+    line-height: 0em !important;
+    font-size: 150% !important;
+}
+
+.i18n a {
+    pointer-events: none;
+}
+
+.i18n:hover .i18n-languages {
+    display: block;
+}

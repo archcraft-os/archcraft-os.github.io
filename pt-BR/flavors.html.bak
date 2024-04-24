@@ -1,36 +1,36 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="pt-BR">
 <html>
 	<head>
 		<!-- Primary Meta Tags -->
 		<title>Archcraft : Flavors</title>
 		<meta name="title" content="Archcraft : Flavors">
-		<meta name="description" content="Yet another minimal Linux distribution,
-		based on Arch Linux.">
+		<meta name="description" content="Mais uma distribuição Linux minimalista,
+		baseada no Arch Linux.">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://archcraft.io/flavors">
 		<meta property="og:title" content="Archcraft : Flavors">
-		<meta property="og:description" content="Yet another minimal Linux distribution,
-		based on Arch Linux.">
+		<meta property="og:description" content="Mais uma distribuição Linux minimalista,
+		baseada no Arch Linux.">
 		<meta property="og:image" content="https://archcraft.io/images/meta.jpg">
 
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://archcraft.io/flavors">
 		<meta property="twitter:title" content="Archcraft : Flavors">
-		<meta property="twitter:description" content="Yet another minimal Linux distribution,
-		based on Arch Linux.">
+		<meta property="twitter:description" content="Mais uma distribuição Linux minimalista,
+		baseada no Arch Linux.">
 		<meta property="twitter:image" content="https://archcraft.io/images/meta.jpg">
 
 		<!-- Other -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="shortcut icon" href="images/fav.svg">
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="../images/fav.svg">
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../assets/css/i18n.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -39,23 +39,23 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<span class="logo"><img src="../images/logo.svg" alt="" /></span>
 						<h1>Archcraft</h1>
-						<p>Yet another minimal Linux distribution,<br />
-						based on <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>
+						<p>Mais uma distribuição Linux minimalista,<br />
+						baseada no <a href="https://www.archlinux.org" target="_blank">Arch Linux</a>.</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="download.html">Download</a></li>
-							<li><a href="flavors.html" class="active">Flavors</a></li>
-							<li><a href="premium.html">Premium</a></li>
-							<li><a href="https://gallery.archcraft.io" target="_blank">Gallery</a></li>
+							<li><a href="/pt-BR/index.html">Início</a></li>
+							<li><a href="/pt-BR/download.html">Download</a></li>
+							<li><a href="/pt-BR/flavors.html" class="active">Versões</a></li>
+							<li><a href="/pt-BR/premium.html">Premium</a></li>
+							<li><a href="https://gallery.archcraft.io" target="_blank">Galeria</a></li>
 							<li><a href="https://wiki.archcraft.io" target="_blank">Wiki</a></li>
-							<li><a href="https://wiki.archcraft.io/news" target="_blank">News</a></li>
-							<li><a href="more.html">More</a></li>
+							<li><a href="https://wiki.archcraft.io/news" target="_blank">Notícias</a></li>
+							<li><a href="/pt-BR/more.html">Mais</a></li>
 							<li class="i18n"><a href="#">🌎</a>
 								<ul class="i18n-languages">
 									<li><a href="/flavors.html" class="active" title="English">🇬🇧</a></li>
@@ -85,11 +85,11 @@
 										<header class="major">
 											<h2>Archcraft ARM</h2>
 										</header>
-										<p>This flavor of Archcraft is created for <b>ARM Devices</b>.<br>
-										Archcraft ARM is just regular Archcraft, created for some supported ARM machines,
-										like Raspberry Pis, Pinebook, Chromebooks and other ARM based single board computers.</p>
+										<p>Esta versão do Archcraft foi feita para <b>dispositivos ARM</b>.<br>
+										Archcraft ARM é basicamente o Archcraft normal, criado para funcionar em algumas máquinas ARM compatíveis,
+										como Raspberry Pis, Pinebooks, Chromebooks e outros computadores de placa única baseados em ARM.</p>
 										<ul class="actions">
-											<li><a href="https://wiki.archcraft.io/docs/arm/archcraft-arm" class="button primary" target="_blank">Install</a></li>
+											<li><a href="https://wiki.archcraft.io/docs/arm/archcraft-arm" class="button primary" target="_blank">Instale</a></li>
 											<li><a href="https://github.com/archcraft-os/archcraft-arm" class="button" target="_blank">Github</a></li>
 										</ul>
 									</div>
@@ -102,11 +102,11 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Archcraft XFCE<span style="color:#e06b74"><sup>&nbsp;(discontinued)</sup></span></h2>
+											<h2>Archcraft XFCE<span style="color:#e06b74"><sup>&nbsp;(descontinuado)</sup></span></h2>
 										</header>
-										<p>This flavor of Archcraft comes with <b>XFCE</b>.<br>
-										Xfce is a lightweight desktop environment, It aims to be fast and low on system resources.
-										Archcraft XFCE is highly customized and pre-configured. It's a ready to go XFCE system.</p>
+										<p>Esta versão do Archcraft vem com o <b>XFCE</b>.<br>
+										O XFCE é um ambiente desktop leve, projetado para ser rápido e consumir poucos recursos do sistema.
+										O Archcraft XFCE é altamente personalizado e pré-configurado. É um sistema com XFCE pronto para o uso.</p>
 										<ul class="actions">
 											<li><a href="https://sourceforge.net/projects/archcraft-xfce" class="button primary" target="_blank">Download</a></li>
 											<li><a href="https://github.com/archcraft-os/archcraft-xfce" class="button" target="_blank">Github</a></li>
@@ -130,11 +130,11 @@
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h2>Archcraft LXDE<span style="color:#e06b74"><sup>&nbsp;(discontinued)</sup></span></h2>
+											<h2>Archcraft LXDE<span style="color:#e06b74"><sup>&nbsp;(descontinuado)</sup></span></h2>
 										</header>
-										<p>This flavor of Archcraft comes with <b>LXDE</b>.<br>
-										LXDE is a desktop environment with comparatively low resource requirements.
-										This makes it especially suitable for use on older or resource-constrained personal computers such as netbooks or system on a chip computers.</p>
+										<p>Esta versão do Archcraft vem com o <b>LXDE</b>.<br>
+										O LXDE é um ambiente desktop que requer poucos recursos do sistema.
+										Isso o torna particularmente adequado para computadores mais antigos ou com recursos limitados, como netbooks ou dispositivos baseados em system on a chip.</p>
 										<ul class="actions">
 											<li><a href="https://sourceforge.net/projects/archcraft-lxde" class="button primary" target="_blank">Download</a></li>
 											<li><a href="https://github.com/archcraft-os/archcraft-lxde" class="button" target="_blank">Github</a></li>
@@ -158,16 +158,16 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Sponsor</h2>
-							<p>If you are enjoying Archcraft, Please consider sponsoring me on github.
-							Your sponsorship will help Archcraft to improve and grow and your support will keep it maintained, updated and alive.</p>
+							<h2>Apoiar</h2>
+							<p>Se você está gostando do Archcraft, considere me patrocinar no github.
+							Seu apoio vai viabilizar a continuidade do projeto e ajudar ele a crescer.</p>
 							<ul class="actions">
-								<li><a href="https://github.com/sponsors/adi1090x" class="button">Sponsor</a></li>
+								<li><a href="https://github.com/sponsors/adi1090x" class="button">Apoiar</a></li>
 							</ul>
 						</section>
 						<section>
-							<h2>Important Links</h2>
-							<p>Links to Archcraft's github page, ISO source, Releases, Issues, and my github profile respectively. Make sure you hit the star on Archcraft repositories.</p>
+							<h2>Links Importantes</h2>
+							<p>Links para a página do Archcraft no GitHub, source da ISO, lançamentos, listagem de problemas e meu perfil no GitHub, respectivamente. Não deixe de dar uma estrela nos repositórios do Archcraft.</p>
 							<ul class="icons">
 								<li><a href="https://github.com/archcraft-os" target="_blank" class="icon brands fa-github alt"><span class="label">Archcraft</span></a></li>
 								<li><a href="https://github.com/archcraft-os/archcraft" target="_blank" class="icon solid fa-code alt"><span class="label">Repository</span></a></li>
@@ -193,13 +193,13 @@
 		</script>	-->
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>

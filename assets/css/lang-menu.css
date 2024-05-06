@@ -1,4 +1,4 @@
-.i18n-languages {
+.lang-menu-list {
     display: none;
     position: absolute;
     z-index: 1000;
@@ -7,7 +7,7 @@
     border-radius: 8px;
 }
 
-.i18n-languages li a {
+.lang-menu-list li a {
     pointer-events: all;
     margin: 0.4em;
     padding: 0em !important;
@@ -16,10 +16,10 @@
     font-size: 150% !important;
 }
 
-.i18n a {
+.lang-menu a {
     pointer-events: none;
 }
 
-.i18n:hover .i18n-languages {
+.lang-menu:hover .lang-menu-list {
     display: block;
 }

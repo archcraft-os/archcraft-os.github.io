@@ -1,0 +1,25 @@
+.lang-menu-list {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: #32353c;
+    padding-top: 0.3em !important;
+    border-radius: 8px;
+}
+
+.lang-menu-list li a {
+    pointer-events: all;
+    margin: 0.4em;
+    padding: 0em !important;
+    height: 0em !important;
+    line-height: 0em !important;
+    font-size: 150% !important;
+}
+
+.lang-menu a {
+    pointer-events: none;
+}
+
+.lang-menu:hover .lang-menu-list {
+    display: block;
+}

@@ -86,11 +86,42 @@
 			}
 		}
 
-		@include breakpoint('<=small') {
-			display: none;
+		@include breakpoint('<=medium') {
+			&, &.alt {
+				position: relative;
+				max-width: 100%;
+				padding: 0.5em;
+				border-radius: _size(border-radius-main) _size(border-radius-main) 0 0;
+			}
 
 			& + #main {
 				padding-top: 0;
+			}
+
+			ul {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+				gap: 0.25em;
+			}
+
+			ul li, &.alt ul li {
+				margin: 0;
+
+				a {
+					display: grid;
+					place-items: center;
+					min-height: 44px;
+					height: auto;
+					padding: 0.25em;
+					font-size: 1em;
+					line-height: 1.2;
+				}
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			ul {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
 			}
 		}
 	}

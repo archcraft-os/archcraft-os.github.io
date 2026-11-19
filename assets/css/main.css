@@ -3322,16 +3322,46 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
-
-			#nav {
-				display: none;
+		@media screen and (max-width: 980px) {
+			#nav,
+			#nav.alt {
+				position: relative;
+				max-width: 100%;
+				padding: 0.5em;
+				border-radius: 0.25em 0.25em 0 0;
 			}
 
-				#nav + #main {
-					padding-top: 0;
-				}
+			#nav + #main {
+				padding-top: 0;
+			}
 
+			#nav ul {
+				display: grid;
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 0.25em;
+			}
+
+			#nav ul li,
+			#nav.alt ul li {
+				margin: 0;
+			}
+
+			#nav ul li a,
+			#nav.alt ul li a {
+				display: grid;
+				place-items: center;
+				min-height: 44px;
+				height: auto;
+				padding: 0.25em;
+				font-size: 1em;
+				line-height: 1.2;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 980px) {
+			#nav ul {
+				grid-template-columns: repeat(4, minmax(0, 1fr));
+			}
 		}
 
 /* Main */

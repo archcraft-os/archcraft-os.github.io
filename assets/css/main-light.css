@@ -3807,3 +3807,11 @@ input, select, textarea {
 			}
 
 		}
+
+/* no border radius on smaller devices */
+@media screen and (max-width: 980px) {
+    #nav + #main {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}

@@ -1,0 +1,16 @@
+name = "archcraft-supporters"
+main = "index.mjs"
+compatibility_date = "2026-11-19"
+compatibility_flags = ["nodejs_compat"]
+
+[triggers]
+crons = ["7 * * * *"]
+
+[vars]
+GITHUB_LOGIN = "adi1090x"
+SHOP_ITEMS = { "10f2e87af3" = "Sway Desktop", "f379e986f4" = "Wayfire Desktop", "69957c0587" = "River Desktop", "71d0e298d9" = "Hyprland Desktop", "524182856f" = "NEWM Desktop", "b56b660838" = "Niri Desktop", "360eeee6f0" = "Mango Desktop", "b58a7fa257" = "Labwc Desktop", "9b2de4919f" = "Openbox Premium", "5c859ad898" = "Bspwm Premium", "a529474abf" = "i3wm Premium", "5c90ab1bee" = "Qtile Premium", "3f5db76f5b" = "Xmonad Premium", "213becbf00" = "Archcraft WSE ISO", "c925a2a8c1" = "Archcraft Prime ISO", "1d8e3409a8" = "Ubuntucraft", "94be658a0f" = "Voidcraft", "ee1f2f4cad" = "Fedoracraft" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "archcraft-supporters"
+database_id = "32357fb3-58f5-406c-ad32-6b2f7544082a"

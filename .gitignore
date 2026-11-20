@@ -1,2 +1,5 @@
 cleanup.sh
 push.sh
+/worker/.env*
+/worker/.dev.vars*
+/worker/.wrangler/
